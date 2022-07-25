@@ -1,0 +1,47 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.SacramentVM
+@{
+    ViewBag.Title = "Sacrament";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+    ChurchSite.DAL.DataConnection.DatabaseEntities _entities = new ChurchSite.DAL.DataConnection.DatabaseEntities();
+    var sacrament = _entities.Sacraments.Where(x => x.IsDeleted == false).ToList();
+}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Sacrament</h2>
+            <ol>
+                <li><a href="#">Sacrament</a></li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+
+<section id="features" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="vertical-menu">
+                    @foreach (var item in sacrament)
+                    {
+
+                        <a href="@Url.Action("ViewSacrament","Sacrament",new { id=item.Id,area=""})">@item.Title</a>
+                    }
+                </div>
+            
+            </div>
+            <div class="col-sm-8  section-title aos-init aos-animate" data-aos="fade-up">
+                <div class="moduleBody">
+                    <h4 class="text-center">The Sacrament</h4>
+                    <img src="~/Front_Content/img/CKP/Sacrament/Sacraments.jpg" />
+                    <br /><br />
+                    <p>The sacramental life is central to the spirituality of Catholics. Through the celebration of all of the sacraments we come to experience God's grace and mercy in very vivid, visible ways.&nbsp;Christ The King offers preparation sessions for the celebration of the sacraments of initiation (Baptism, Confirmation and Eucharist) as well as for marriage.&nbsp;We hope the information in these pages answer many of your questions. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

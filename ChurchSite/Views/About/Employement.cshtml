@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Employment";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Employment</h2>
+            <ol>
+                <li><a href="~/Home">Home</a></li>
+                <li>Employment</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+
+<section id="features" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="vertical-menu">
+                    <a class="active" href="~/About/AboutParish">About CKP GRA Enugu</a>
+                    <a href="~/About/ParishHistory">Parish History</a>
+                    <a href="~/About/MassSchedule">Mass Schedule</a>
+                    <a href="~/About/Staff">Staff</a>
+                    <a href="~/About/ContactUs">Contact Us</a>
+                    <a href="~/About/EnuguDiocese">Catholic Diocese of Enugu</a>
+                    <a href="~/About/AboutBishop">About The Bishop</a>
+                    <a href="~/About/AboutPopeFrancis">About Pope Francis</a>
+                    <a href="~/About/Direction">Direction</a>
+                    <a href="~/About/Employement">Employment</a>
+                </div>
+                @Html.Partial("_SpotLight")
+            </div>
+            <div class="col-sm-8  section-title aos-init aos-animate" data-aos="fade-up">
+                <div class="moduleBody">
+                    <h1 style="        text-align: center;"><span style="font-size:22px;"><strong></strong></span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

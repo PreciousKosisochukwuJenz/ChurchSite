@@ -1,0 +1,210 @@
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\ChurchSite.dll.config
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\ChurchSite.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\ChurchSite.pdb
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\csc.exe
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\csc.exe.config
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\csc.rsp
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\csi.exe
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\csi.exe.config
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\csi.rsp
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.AppContext.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Console.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.IO.Compression.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Net.Http.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Net.Sockets.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.ValueTuple.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\vbc.exe
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\vbc.exe.config
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\vbc.rsp
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\ChurchSite.DAL.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\EntityFramework.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\EntityFramework.SqlServer.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\log4net.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.Owin.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.Owin.Security.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\MonnifyPaymentGateway.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Owin.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Security.AccessControl.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Security.Permissions.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Security.Principal.Windows.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Helpers.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Mvc.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Razor.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Webpages.Deployment.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Webpages.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Webpages.Razor.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\RestSharp.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Newtonsoft.Json.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\ChurchSite.DAL.pdb
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\ChurchSite.DAL.dll.config
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\MonnifyPaymentGateway.pdb
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\MonnifyPaymentGateway.dll.config
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\EntityFramework.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\EntityFramework.SqlServer.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\log4net.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.Owin.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.Owin.Security.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Configuration.ConfigurationManager.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Security.AccessControl.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Security.Permissions.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Security.Principal.Windows.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Razor.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Webpages.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Webpages.Deployment.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Webpages.Razor.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Helpers.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\System.Web.Mvc.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\RestSharp.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Newtonsoft.Json.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\obj\Debug\ChurchSite.csproj.CoreCompileInputs.cache
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\obj\Debug\ChurchSite.csproj.CopyComplete
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\obj\Debug\ChurchSite.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\obj\Debug\ChurchSite.pdb
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\obj\Debug\ChurchSite.csprojAssemblyReference.cache
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\ChurchSite.dll.config
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\ChurchSite.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\ChurchSite.pdb
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\csc.exe
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\csc.exe.config
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\csc.rsp
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\csi.exe
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\csi.exe.config
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\csi.rsp
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.AppContext.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Console.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.IO.Compression.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Net.Http.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Net.Sockets.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.ValueTuple.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\vbc.exe
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\vbc.exe.config
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\vbc.rsp
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\ChurchSite.DAL.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\EntityFramework.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\EntityFramework.SqlServer.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\log4net.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.Owin.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.Owin.Security.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\MonnifyPaymentGateway.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Owin.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Security.AccessControl.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Security.Permissions.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Security.Principal.Windows.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Helpers.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Mvc.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Razor.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Webpages.Deployment.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Webpages.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Webpages.Razor.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\RestSharp.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Newtonsoft.Json.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\ChurchSite.DAL.pdb
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\ChurchSite.DAL.dll.config
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\MonnifyPaymentGateway.pdb
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\MonnifyPaymentGateway.dll.config
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\EntityFramework.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\EntityFramework.SqlServer.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\log4net.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.Owin.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.Owin.Security.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Configuration.ConfigurationManager.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Security.AccessControl.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Security.Permissions.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Security.Principal.Windows.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Razor.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Webpages.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Webpages.Deployment.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Webpages.Razor.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Helpers.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\System.Web.Mvc.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\RestSharp.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\bin\Newtonsoft.Json.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\obj\Debug\ChurchSite.csprojAssemblyReference.cache
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\obj\Debug\ChurchSite.csproj.CoreCompileInputs.cache
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\obj\Debug\ChurchSite.csproj.CopyComplete
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\obj\Debug\ChurchSite.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite\obj\Debug\ChurchSite.pdb

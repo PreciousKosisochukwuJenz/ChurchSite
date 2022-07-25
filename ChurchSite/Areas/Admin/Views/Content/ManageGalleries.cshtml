@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "Manage Galleries";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<style type="text/css">
+    .selected {
+        background-color: #666;
+        width:100%
+    }
+</style>
+<link href="~/Contents/Styles/sortable.css" rel="stylesheet" />
+<div class="app-main__inner">
+    <!-- Notification -->
+    <div class="alert @TempData["AlertType"] alert-dismissible fade show" style="display:none;">
+        <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+            <span aria-hidden="true">×</span>
+        </button><i class="ion-android-done-all"></i>&nbsp;
+        @TempData["AlertMessage"]
+    </div>
+    <div class="app-page-title">
+        <div class="page-title-wrapper">
+            <div class="page-title-heading">
+                <div class="page-title-icon">
+                    <i class="pe-7s-news-paper icon-gradient bg-tempting-azure"></i>
+                </div>
+                <div>
+                    Gallery
+                    <div class="page-title-subheading">Manage all gallery content here.</div>
+                </div>
+            </div>
+            <div class="page-title-actions">
+                <a href="@Url.Action("AddGallery","Content")" class="mb-2 mr-2 btn-hover-shine btn btn-shadow btn-primary">
+                    Add Gallery Content
+                </a>
+            </div>
+        </div>
+    </div><div class="main-card mb-3 card">
+    @using (Html.BeginForm("UpdateHierarchy", "Content", FormMethod.Post))
+    {
+              <div class="card-body">
+                  <div class="table-responsive">
+
+                      <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
+                          <thead>
+                              <tr>
+                                  <th></th>
+                                  <th>Data</th>
+                                  <th>Description</th>
+                                  <th>Category</th>
+                                  <th>Format</th>
+                                  <th></th>
+                              </tr>
+                          </thead>
+                          <tbody id="tbody">
+                              @foreach (var row in ViewBag.Galleries)
+                              {
+                                 // string ImageSrc = "";
+                                  if (row.Format != "mp4")
+                                  {
+                                     // string ImageBase64 = Convert.ToBase64String(row.ByteData);
+                                     // ImageSrc = string.Format("data:image/gif;base64,{0}", ImageBase64);
+                                  }
+
+                                  <tr>
+                                      <td><i class="fa fa-list btn"></i></td>
+                                      @if (row.Format != "mp4")
+                                      {
+                                          <td><img src="@row.FilePath" style="width:250px;height:150px" /></td>
+                                      }
+                                      else
+                                      {
+                                          <td>
+                                              <video oncontextmenu="return false;" style="width: 250px; height: 150px;" controls disablePictureInPicture controlsList="nodownload noremoteplayback">
+                                                  <source src="@Url.Action("DownloadVideo", "Content", new { area = "Admin", id = row.Id })" autostart="false" />
+                                              </video>
+                                          </td>
+                                      }
+                                      <td style="display:none"><input name="data" value="@row.Id" /></td>
+                                      <td style="width: 200px">@row.Description</td>
+                                      <td>@row.Category</td>
+                                      <td>@row.Format</td>
+                                      <td>
+                                          <div class="dropdown d-inline-block">
+                                              <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
+                                                      class="mb-2 mr-2 dropdown-toggle btn btn-primary">
+                                                  Manage options
+                                              </button>
+                                              <div tabindex="-1" role="menu" aria-hidden="true"
+                                                   class="dropdown-menu-shadow dropdown-menu">
+                                                  <div class="dropdown-menu-header">
+                                                      <div class="dropdown-menu-header-inner bg-primary">
+                                                          <div class="menu-header-image opacity-1" style="background-image: url('/Contents/images/dropdown-header/abstract3.jpg');"></div>
+                                                          <div class="menu-header-content">
+                                                              <h5 class="menu-header-title">Options Menu</h5>
+                                                              <h6 class="menu-header-subtitle">Manage all of your options</h6>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <a href="@Url.Action("EditGallery", "Content", new { id = row.Id })" tabindex="0" class="dropdown-item">
+                                                      <i class="dropdown-icon ion-edit"></i><span>Edit</span>
+                                                  </a>
+                                                  <button type="button" tabindex="0" class="dropdown-item" onclick="PromptGallery(@row.Id)">
+                                                      <i class="dropdown-icon lnr-trash"> </i><span>Delete</span>
+                                                  </button>
+                                                  <a href="@Url.Action("GalleryDetail", "Content", new { id = row.Id })" tabindex="0" class="dropdown-item">
+                                                      <i class="dropdown-icon ion-edit"></i><span>Detail</span>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </td>
+                                  </tr>
+                              }
+                          </tbody>
+                      </table>
+                  </div>
+                  <hr />
+                  <button class="mb-4 mt-n2 btn btn-primary"><i class="fa fa-upload"></i> Update</button>
+              </div>
+
+    }
+</div>
+</div>
+<script src="~/Scripts/Ajax.jquery.min.js"></script>
+<script src="~/Scripts/Previewer.js"></script>
+@section Scripts{
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/sortable.js"></script>
+    <script src="~/Scripts/Validation.js"></script>
+    <script src="~/Areas/Admin/Scripts/Content.js"></script>
+    <script>
+        $(function () {
+            $("#tbody").sortable({
+                items: 'tr',
+                cursor: 'pointer',
+                axis: 'y',
+                dropOnEmpty: false,
+                start: function (e, ui) {
+                    ui.item.addClass("selected");
+                },
+                stop: function (e, ui) {
+                    ui.item.removeClass("selected");
+                }
+            });
+        });
+    </script>
+}
+
+

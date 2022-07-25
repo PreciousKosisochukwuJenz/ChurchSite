@@ -1,0 +1,825 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA0F29AD-04F0-4848-A5D8-92AC226C7149}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChurchSite</RootNamespace>
+    <AssemblyName>ChurchSite</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.1.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.1.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.1.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.1.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.5.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Scripts\Afflilate.js" />
+    <Content Include="Areas\Admin\Scripts\Article.js" />
+    <Content Include="Areas\Admin\Scripts\ArticleContent.js" />
+    <Content Include="Areas\Admin\Scripts\Author.js" />
+    <Content Include="Areas\Admin\Scripts\Book.js" />
+    <Content Include="Areas\Admin\Scripts\Categoy.js" />
+    <Content Include="Areas\Admin\Scripts\Content.js" />
+    <Content Include="Areas\Admin\Scripts\Role.js" />
+    <Content Include="Areas\Admin\Scripts\Spiritualist.js" />
+    <Content Include="Areas\Admin\Scripts\User.js" />
+    <Compile Include="Areas\Admin\Helpers\MvcExtensions.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IApplicationService.cs" />
+    <Compile Include="Areas\Admin\Services\ApplicationService.cs" />
+    <Compile Include="Areas\Admin\ViewModels\BaptismVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\BookMassVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\CustomMailVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\DonationVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\EucharistVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\FeeVM.cs" />
+    <Content Include="Contents\fonts\AD.svg" />
+    <Content Include="Contents\fonts\AE.svg" />
+    <Content Include="Contents\fonts\AF.svg" />
+    <Content Include="Contents\fonts\AG.svg" />
+    <Content Include="Contents\fonts\AI.svg" />
+    <Content Include="Contents\fonts\AL.svg" />
+    <Content Include="Contents\fonts\AM.svg" />
+    <Content Include="Contents\fonts\AO.svg" />
+    <Content Include="Contents\fonts\AR.svg" />
+    <Content Include="Contents\fonts\AS.svg" />
+    <Content Include="Contents\fonts\AT.svg" />
+    <Content Include="Contents\fonts\AU.svg" />
+    <Content Include="Contents\fonts\AW.svg" />
+    <Content Include="Contents\fonts\AX.svg" />
+    <Content Include="Contents\fonts\AZ.svg" />
+    <Content Include="Contents\fonts\BA.svg" />
+    <Content Include="Contents\fonts\BB.svg" />
+    <Content Include="Contents\fonts\BD.svg" />
+    <Content Include="Contents\fonts\BE.svg" />
+    <Content Include="Contents\fonts\BF.svg" />
+    <Content Include="Contents\fonts\BG.svg" />
+    <Content Include="Contents\fonts\BH.svg" />
+    <Content Include="Contents\fonts\BI.svg" />
+    <Content Include="Contents\fonts\BJ.svg" />
+    <Content Include="Contents\fonts\BL.svg" />
+    <Content Include="Contents\fonts\BM.svg" />
+    <Content Include="Contents\fonts\BN.svg" />
+    <Content Include="Contents\fonts\BO.svg" />
+    <Content Include="Contents\fonts\BR.svg" />
+    <Content Include="Contents\fonts\BS.svg" />
+    <Content Include="Contents\fonts\BT.svg" />
+    <Content Include="Contents\fonts\BV.svg" />
+    <Content Include="Contents\fonts\BW.svg" />
+    <Content Include="Contents\fonts\BY.svg" />
+    <Content Include="Contents\fonts\BZ.svg" />
+    <Content Include="Contents\fonts\CA.svg" />
+    <Content Include="Contents\fonts\CC.svg" />
+    <Content Include="Contents\fonts\CD.svg" />
+    <Content Include="Contents\fonts\CF.svg" />
+    <Content Include="Contents\fonts\CG.svg" />
+    <Content Include="Contents\fonts\CH.svg" />
+    <Content Include="Contents\fonts\CI.svg" />
+    <Content Include="Contents\fonts\CK.svg" />
+    <Content Include="Contents\fonts\CL.svg" />
+    <Content Include="Contents\fonts\CM.svg" />
+    <Content Include="Contents\fonts\CN.svg" />
+    <Content Include="Contents\fonts\CO.svg" />
+    <Content Include="Contents\fonts\CR.svg" />
+    <Content Include="Contents\fonts\CU.svg" />
+    <Content Include="Contents\fonts\CV.svg" />
+    <Content Include="Contents\fonts\CW.svg" />
+    <Content Include="Contents\fonts\CX.svg" />
+    <Content Include="Contents\fonts\CY.svg" />
+    <Content Include="Contents\fonts\CZ.svg" />
+    <Content Include="Contents\fonts\DE.svg" />
+    <Content Include="Contents\fonts\DJ.svg" />
+    <Content Include="Contents\fonts\DK.svg" />
+    <Content Include="Contents\fonts\DM.svg" />
+    <Content Include="Contents\fonts\DO.svg" />
+    <Content Include="Contents\fonts\DZ.svg" />
+    <Content Include="Contents\fonts\EC.svg" />
+    <Content Include="Contents\fonts\EE.svg" />
+    <Content Include="Contents\fonts\EG.svg" />
+    <Content Include="Contents\fonts\ER.svg" />
+    <Content Include="Contents\fonts\ES.svg" />
+    <Content Include="Contents\fonts\ET.svg" />
+    <Content Include="Contents\fonts\EU.svg" />
+    <Content Include="Contents\fonts\fa-solid-900.svg" />
+    <Content Include="Contents\fonts\FI.svg" />
+    <Content Include="Contents\fonts\FJ.svg" />
+    <Content Include="Contents\fonts\FK.svg" />
+    <Content Include="Contents\fonts\FM.svg" />
+    <Content Include="Contents\fonts\FO.svg" />
+    <Content Include="Contents\fonts\FR.svg" />
+    <Content Include="Contents\fonts\GA.svg" />
+    <Content Include="Contents\fonts\GB-ENG.svg" />
+    <Content Include="Contents\fonts\GB-NIR.svg" />
+    <Content Include="Contents\fonts\GB-SCT.svg" />
+    <Content Include="Contents\fonts\GB-WLS.svg" />
+    <Content Include="Contents\fonts\GB-ZET.svg" />
+    <Content Include="Contents\fonts\GB.svg" />
+    <Content Include="Contents\fonts\GD.svg" />
+    <Content Include="Contents\fonts\GE.svg" />
+    <Content Include="Contents\fonts\GF.svg" />
+    <Content Include="Contents\fonts\GG.svg" />
+    <Content Include="Contents\fonts\GH.svg" />
+    <Content Include="Contents\fonts\GI.svg" />
+    <Content Include="Contents\fonts\GL.svg" />
+    <Content Include="Contents\fonts\GM.svg" />
+    <Content Include="Contents\fonts\GN.svg" />
+    <Content Include="Contents\fonts\GP.svg" />
+    <Content Include="Contents\fonts\GQ.svg" />
+    <Content Include="Contents\fonts\GR.svg" />
+    <Content Include="Contents\fonts\GS.svg" />
+    <Content Include="Contents\fonts\GT.svg" />
+    <Content Include="Contents\fonts\GU.svg" />
+    <Content Include="Contents\fonts\GW.svg" />
+    <Content Include="Contents\fonts\GY.svg" />
+    <Content Include="Contents\fonts\HK.svg" />
+    <Content Include="Contents\fonts\HM.svg" />
+    <Content Include="Contents\fonts\HN.svg" />
+    <Content Include="Contents\fonts\HR.svg" />
+    <Content Include="Contents\fonts\HT.svg" />
+    <Content Include="Contents\fonts\HU.svg" />
+    <Content Include="Contents\fonts\ID.svg" />
+    <Content Include="Contents\fonts\IE.svg" />
+    <Content Include="Contents\fonts\IL.svg" />
+    <Content Include="Contents\fonts\IM.svg" />
+    <Content Include="Contents\fonts\IN.svg" />
+    <Content Include="Contents\fonts\IO.svg" />
+    <Content Include="Contents\fonts\ionicons.svg" />
+    <Content Include="Contents\fonts\IQ.svg" />
+    <Content Include="Contents\fonts\IR.svg" />
+    <Content Include="Contents\fonts\IS.svg" />
+    <Content Include="Contents\fonts\IT.svg" />
+    <Content Include="Contents\fonts\JE.svg" />
+    <Content Include="Contents\fonts\JM.svg" />
+    <Content Include="Contents\fonts\JO.svg" />
+    <Content Include="Contents\fonts\JP.svg" />
+    <Content Include="Contents\fonts\KE.svg" />
+    <Content Include="Contents\fonts\KG.svg" />
+    <Content Include="Contents\fonts\KH.svg" />
+    <Content Include="Contents\fonts\KI.svg" />
+    <Content Include="Contents\fonts\KM.svg" />
+    <Content Include="Contents\fonts\KN.svg" />
+    <Content Include="Contents\fonts\KP.svg" />
+    <Content Include="Contents\fonts\KR.svg" />
+    <Content Include="Contents\fonts\KW.svg" />
+    <Content Include="Contents\fonts\KY.svg" />
+    <Content Include="Contents\fonts\KZ.svg" />
+    <Content Include="Contents\fonts\LA.svg" />
+    <Content Include="Contents\fonts\LB.svg" />
+    <Content Include="Contents\fonts\LC.svg" />
+    <Content Include="Contents\fonts\LGBT.svg" />
+    <Content Include="Contents\fonts\LI.svg" />
+    <Content Include="Contents\fonts\Linearicons-Free.svg" />
+    <Content Include="Contents\fonts\LK.svg" />
+    <Content Include="Contents\fonts\LR.svg" />
+    <Content Include="Contents\fonts\LS.svg" />
+    <Content Include="Contents\fonts\LT.svg" />
+    <Content Include="Contents\fonts\LU.svg" />
+    <Content Include="Contents\fonts\LV.svg" />
+    <Content Include="Contents\fonts\LY.svg" />
+    <Content Include="Contents\fonts\MA.svg" />
+    <Content Include="Contents\fonts\MC.svg" />
+    <Content Include="Contents\fonts\MD.svg" />
+    <Content Include="Contents\fonts\ME.svg" />
+    <Content Include="Contents\fonts\MF.svg" />
+    <Content Include="Contents\fonts\MG.svg" />
+    <Content Include="Contents\fonts\MH.svg" />
+    <Content Include="Contents\fonts\MK.svg" />
+    <Content Include="Contents\fonts\ML.svg" />
+    <Content Include="Contents\fonts\MM.svg" />
+    <Content Include="Contents\fonts\MN.svg" />
+    <Content Include="Contents\fonts\MO.svg" />
+    <Content Include="Contents\fonts\MP.svg" />
+    <Content Include="Contents\fonts\MQ.svg" />
+    <Content Include="Contents\fonts\MR.svg" />
+    <Content Include="Contents\fonts\MS.svg" />
+    <Content Include="Contents\fonts\MT.svg" />
+    <Content Include="Contents\fonts\MU.svg" />
+    <Content Include="Contents\fonts\MV.svg" />
+    <Content Include="Contents\fonts\MW.svg" />
+    <Content Include="Contents\fonts\MX.svg" />
+    <Content Include="Contents\fonts\MY.svg" />
+    <Content Include="Contents\fonts\MZ.svg" />
+    <Content Include="Contents\fonts\NA.svg" />
+    <Content Include="Contents\fonts\NC.svg" />
+    <Content Include="Contents\fonts\NE.svg" />
+    <Content Include="Contents\fonts\NF.svg" />
+    <Content Include="Contents\fonts\NG.svg" />
+    <Content Include="Contents\fonts\NI.svg" />
+    <Content Include="Contents\fonts\NL.svg" />
+    <Content Include="Contents\fonts\NO.svg" />
+    <Content Include="Contents\fonts\NP.svg" />
+    <Content Include="Contents\fonts\NR.svg" />
+    <Content Include="Contents\fonts\NU.svg" />
+    <Content Include="Contents\fonts\NZ.svg" />
+    <Content Include="Contents\fonts\OM.svg" />
+    <Content Include="Contents\fonts\PA.svg" />
+    <Content Include="Contents\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Contents\fonts\PE.svg" />
+    <Content Include="Contents\fonts\PF.svg" />
+    <Content Include="Contents\fonts\PG.svg" />
+    <Content Include="Contents\fonts\PH.svg" />
+    <Content Include="Contents\fonts\PK.svg" />
+    <Content Include="Contents\fonts\PL.svg" />
+    <Content Include="Contents\fonts\PM.svg" />
+    <Content Include="Contents\fonts\PN.svg" />
+    <Content Include="Contents\fonts\PR.svg" />
+    <Content Include="Contents\fonts\PS.svg" />
+    <Content Include="Contents\fonts\PT.svg" />
+    <Content Include="Contents\fonts\PW.svg" />
+    <Content Include="Contents\fonts\PY.svg" />
+    <Content Include="Contents\fonts\QA.svg" />
+    <Content Include="Contents\fonts\RE.svg" />
+    <Content Include="Contents\fonts\RO.svg" />
+    <Content Include="Contents\fonts\RS.svg" />
+    <Content Include="Contents\fonts\RU.svg" />
+    <Content Include="Contents\fonts\RW.svg" />
+    <Content Include="Contents\fonts\SA.svg" />
+    <Content Include="Contents\fonts\SB.svg" />
+    <Content Include="Contents\fonts\SC.svg" />
+    <Content Include="Contents\fonts\SD.svg" />
+    <Content Include="Contents\fonts\SE.svg" />
+    <Content Include="Contents\fonts\SG.svg" />
+    <Content Include="Contents\fonts\SH.svg" />
+    <Content Include="Contents\fonts\SI.svg" />
+    <Content Include="Contents\fonts\SJ.svg" />
+    <Content Include="Contents\fonts\SK.svg" />
+    <Content Include="Contents\fonts\SL.svg" />
+    <Content Include="Contents\fonts\SM.svg" />
+    <Content Include="Contents\fonts\SN.svg" />
+    <Content Include="Contents\fonts\SO.svg" />
+    <Content Include="Contents\fonts\SR.svg" />
+    <Content Include="Contents\fonts\SS.svg" />
+    <Content Include="Contents\fonts\ST.svg" />
+    <Content Include="Contents\fonts\SV.svg" />
+    <Content Include="Contents\fonts\SX.svg" />
+    <Content Include="Contents\fonts\SY.svg" />
+    <Content Include="Contents\fonts\SZ.svg" />
+    <Content Include="Contents\fonts\TC.svg" />
+    <Content Include="Contents\fonts\TD.svg" />
+    <Content Include="Contents\fonts\TF.svg" />
+    <Content Include="Contents\fonts\TG.svg" />
+    <Content Include="Contents\fonts\TH.svg" />
+    <Content Include="Contents\fonts\TJ.svg" />
+    <Content Include="Contents\fonts\TK.svg" />
+    <Content Include="Contents\fonts\TL.svg" />
+    <Content Include="Contents\fonts\TM.svg" />
+    <Content Include="Contents\fonts\TN.svg" />
+    <Content Include="Contents\fonts\TO.svg" />
+    <Content Include="Contents\fonts\TR.svg" />
+    <Content Include="Contents\fonts\TT.svg" />
+    <Content Include="Contents\fonts\TV.svg" />
+    <Content Include="Contents\fonts\TW.svg" />
+    <Content Include="Contents\fonts\TZ.svg" />
+    <Content Include="Contents\fonts\UA.svg" />
+    <Content Include="Contents\fonts\UG.svg" />
+    <Content Include="Contents\fonts\UM.svg" />
+    <Content Include="Contents\fonts\US-CA.svg" />
+    <Content Include="Contents\fonts\US.svg" />
+    <Content Include="Contents\fonts\UY.svg" />
+    <Content Include="Contents\fonts\UZ.svg" />
+    <Content Include="Contents\fonts\VA.svg" />
+    <Content Include="Contents\fonts\VC.svg" />
+    <Content Include="Contents\fonts\VE.svg" />
+    <Content Include="Contents\fonts\VG.svg" />
+    <Content Include="Contents\fonts\VI.svg" />
+    <Content Include="Contents\fonts\VN.svg" />
+    <Content Include="Contents\fonts\VU.svg" />
+    <Content Include="Contents\fonts\WF.svg" />
+    <Content Include="Contents\fonts\WS.svg" />
+    <Content Include="Contents\fonts\XK.svg" />
+    <Content Include="Contents\fonts\YE.svg" />
+    <Content Include="Contents\fonts\YT.svg" />
+    <Content Include="Contents\fonts\ZA.svg" />
+    <Content Include="Contents\fonts\ZM.svg" />
+    <Content Include="Contents\fonts\ZW.svg" />
+    <Content Include="Contents\images\images.png" />
+    <Content Include="Contents\images\Loaderr.gif" />
+    <Content Include="Contents\images\logo-white.svg" />
+    <Content Include="Contents\Styles\basic.min.css" />
+    <Content Include="Contents\Styles\HomeStyle.css" />
+    <Content Include="Contents\Styles\main.d810cf0ae7f39f28f336.css" />
+    <Content Include="Contents\Styles\sortable.css" />
+    <Content Include="Front_Content\css\green-style.css" />
+    <Content Include="Front_Content\css\orange-style.css" />
+    <Content Include="Front_Content\css\toastr.css" />
+    <Content Include="Front_Content\img\bg-1.jpg" />
+    <Content Include="Front_Content\img\bg-7.jpg" />
+    <Content Include="Front_Content\img\CKP\ANNOUNCEMENT\1a.jpg" />
+    <Content Include="Front_Content\img\CKP\ARTICLE\20200702_134118.jpg" />
+    <Content Include="Front_Content\img\CKP\ARTICLE\Pope with delegates.jpeg" />
+    <Content Include="Front_Content\img\CKP\Bishop.png" />
+    <Content Include="Front_Content\img\CKP\CHURCH VIEWS\ckp front view.jpg" />
+    <Content Include="Front_Content\img\CKP\CHURCH VIEWS\ckp side view.jpg" />
+    <Content Include="Front_Content\img\CKP\CHURCH VIEWS\DroneView.png" />
+    <Content Include="Front_Content\img\CKP\CHURCH VIEWS\DSC_2243.JPG" />
+    <Content Include="Front_Content\img\CKP\CHURCH VIEWS\DSC_2299.JPG" />
+    <Content Include="Front_Content\img\CKP\CHURCH VIEWS\DSC_2302.JPG" />
+    <Content Include="Front_Content\img\CKP\CHURCH VIEWS\DSC_2314.JPG" />
+    <Content Include="Front_Content\img\CKP\CHURCH VIEWS\DSC_2315.JPG" />
+    <Content Include="Front_Content\img\CKP\CKP LOGO 3.jpg" />
+    <Content Include="Front_Content\img\CKP\CKP LOGO 4.jpg" />
+    <Content Include="Front_Content\img\CKP\CKP LOGO 5.jpg" />
+    <Content Include="Front_Content\img\CKP\CKP LOGO.jpg" />
+    <Content Include="Front_Content\img\CKP\ckp-logo.png" />
+    <Content Include="Front_Content\img\CKP\ckp-logo1.png" />
+    <Content Include="Front_Content\img\CKP\DANOGA LOGOS.jpg" />
+    <Content Include="Front_Content\img\CKP\EnuguDiosease.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\1a.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\6.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\HALF PAGE - KIDS FOR CHRIST1.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\Her Execellency, Lolo Cecilia Ezeilo.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\His Execellncy RT. Hon. Ifeanyi Ugwuanyi.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\HIS HOLINESS POPE FRANCIS1.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\IMG-20180215-WA0004.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\IMG-20180621-WA0004.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\Most Rev. Calistus V. Onaga.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\Rev. Fr. Sylvanus Ugwu.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\Sacred Heart.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\Very. Rev. Fr. Ejike Mbaka.jpg" />
+    <Content Include="Front_Content\img\CKP\GALLERY\Very. Rev. Fr. Longinus I. Ugonwa.jpg" />
+    <Content Include="Front_Content\img\CKP\Images\church.png" />
+    <Content Include="Front_Content\img\CKP\Images\church1.jpg" />
+    <Content Include="Front_Content\img\CKP\Images\sacc-logo.png" />
+    <Content Include="Front_Content\img\CKP\Images\scroll-bar.png" />
+    <Content Include="Front_Content\img\CKP\Images\sunday-brief.png" />
+    <Content Include="Front_Content\img\CKP\Images\topbarbgr.jpg" />
+    <Content Include="Front_Content\img\CKP\Images\tpn.png" />
+    <Content Include="Front_Content\img\CKP\logo.jpg" />
+    <Content Include="Front_Content\img\CKP\logo2.png" />
+    <Content Include="Front_Content\img\CKP\logo3.png" />
+    <Content Include="Front_Content\img\CKP\Pope with delegates.jpeg" />
+    <Content Include="Front_Content\img\CKP\PRAYERS\Hail Mary1.jpg" />
+    <Content Include="Front_Content\img\CKP\PRAYERS\OurFather.gif" />
+    <Content Include="Front_Content\img\CKP\QUICK_LICK\agora.jpg" />
+    <Content Include="Front_Content\img\CKP\QUICK_LICK\catholic-sun.jpg" />
+    <Content Include="Front_Content\img\CKP\QUICK_LICK\choice-flame.jpg" />
+    <Content Include="Front_Content\img\CKP\QUICK_LICK\enugu-diocese.png" />
+    <Content Include="Front_Content\img\CKP\QUICK_LICK\ewtn.jpg" />
+    <Content Include="Front_Content\img\CKP\QUICK_LICK\ewtnkids.jpg" />
+    <Content Include="Front_Content\img\CKP\QUICK_LICK\holy-see.jpg" />
+    <Content Include="Front_Content\img\CKP\QUICK_LICK\wauorg.png" />
+    <Content Include="Front_Content\img\CKP\Sacrament\Anointing of the Sick.jpg" />
+    <Content Include="Front_Content\img\CKP\Sacrament\baptism.jpg" />
+    <Content Include="Front_Content\img\CKP\Sacrament\Confirmation.jpg" />
+    <Content Include="Front_Content\img\CKP\Sacrament\Marriage.jpg" />
+    <Content Include="Front_Content\img\CKP\Sacrament\Ordination.jpg" />
+    <Content Include="Front_Content\img\CKP\Sacrament\Reconcilliation.jpg" />
+    <Content Include="Front_Content\img\CKP\Sacrament\Sacraments.jpg" />
+    <Content Include="Front_Content\img\CKP\Spiritualist\IMG-20161123-WA0004.jpg" />
+    <Content Include="Front_Content\img\CKP\Spiritualist\MR RAPHAEL OGBU MALE CATECHIST0002.png" />
+    <Content Include="Front_Content\img\CKP\Spiritualist\MRS NWOBODO VIRGINIA FEMALE CATECHIST.jpg" />
+    <Content Include="Front_Content\js\bank3D.js" />
+    <Content Include="Front_Content\js\main.js" />
+    <Content Include="Front_Content\js\toastr.js" />
+    <Content Include="Front_Content\vendor\animate.css\animate.compat.css" />
+    <Content Include="Front_Content\vendor\animate.css\animate.css" />
+    <Content Include="Front_Content\vendor\animate.css\animate.min.css" />
+    <Content Include="Front_Content\vendor\aos\aos.css" />
+    <Content Include="Front_Content\vendor\aos\aos.js" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Front_Content\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Front_Content\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Front_Content\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Front_Content\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Front_Content\vendor\boxicons\css\animations.css" />
+    <Content Include="Front_Content\vendor\boxicons\css\boxicons.css" />
+    <Content Include="Front_Content\vendor\boxicons\css\boxicons.min.css" />
+    <Content Include="Front_Content\vendor\boxicons\css\transformations.css" />
+    <Content Include="Front_Content\vendor\boxicons\fonts\boxicons.svg" />
+    <Content Include="Front_Content\vendor\icofont\icofont.min.css" />
+    <Content Include="Front_Content\vendor\isotope-layout\isotope.pkgd.js" />
+    <Content Include="Front_Content\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <Content Include="Front_Content\vendor\jquery-sticky\jquery.sticky.js" />
+    <Content Include="Front_Content\vendor\jquery.easing\jquery.easing.min.js" />
+    <Content Include="Front_Content\vendor\jquery\jquery.min.js" />
+    <Content Include="Front_Content\vendor\owl.carousel\assets\ajax-loader.gif" />
+    <Content Include="Front_Content\vendor\owl.carousel\assets\owl.carousel.css" />
+    <Content Include="Front_Content\vendor\owl.carousel\assets\owl.carousel.min.css" />
+    <Content Include="Front_Content\vendor\owl.carousel\assets\owl.theme.default.css" />
+    <Content Include="Front_Content\vendor\owl.carousel\assets\owl.theme.default.min.css" />
+    <Content Include="Front_Content\vendor\owl.carousel\assets\owl.theme.green.css" />
+    <Content Include="Front_Content\vendor\owl.carousel\assets\owl.theme.green.min.css" />
+    <Content Include="Front_Content\vendor\owl.carousel\assets\owl.video.play.png" />
+    <Content Include="Front_Content\vendor\owl.carousel\owl.carousel.js" />
+    <Content Include="Front_Content\vendor\owl.carousel\owl.carousel.min.js" />
+    <Content Include="Front_Content\vendor\php-email-form\changelog.txt" />
+    <Content Include="Front_Content\vendor\php-email-form\validate.js" />
+    <Content Include="Front_Content\vendor\venobox\venobox.css" />
+    <Content Include="Front_Content\vendor\venobox\venobox.js" />
+    <Content Include="Front_Content\vendor\venobox\venobox.min.css" />
+    <Content Include="Front_Content\vendor\venobox\venobox.min.js" />
+    <Content Include="Front_Content\vendor\waypoints\jquery.waypoints.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\Ajax.jquery.min.js" />
+    <Content Include="Contents\Styles\dropzone.min.css" />
+    <Content Include="Scripts\BookMass.js" />
+    <Content Include="Scripts\dropzone-amd-module.min.js" />
+    <Content Include="Scripts\dropzone.min.js" />
+    <Content Include="Scripts\Editor.js" />
+    <Content Include="Scripts\Global.js" />
+    <Content Include="Scripts\HomeUtils.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\JQuery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.smartWizard.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\JsLocalSearch.js" />
+    <Content Include="Scripts\main.d810cf0ae7f39f28f336.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\Payment.js" />
+    <Content Include="Scripts\Previewer.js" />
+    <Content Include="Scripts\sortable.js" />
+    <Content Include="Scripts\SweetAlert.js" />
+    <Content Include="Scripts\Tinymc.js" />
+    <Content Include="Scripts\Validation.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="App_Start\URIHandler.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ApplicationSettingsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ArticleController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContentController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FeeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AnnouncementController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MailController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PrayerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SacramentController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SpiritualistController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
+    <Compile Include="Areas\Admin\Helpers\CustomDecrypt.cs" />
+    <Compile Include="Areas\Admin\Helpers\CustomEncrypt.cs" />
+    <Compile Include="Areas\Admin\Helpers\CustomSerializer.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IApplicationSettingsService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IArticleService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IContentService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IFeeService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IMailService.cs" />
+    <Compile Include="Areas\Admin\Interfaces\IUserService.cs" />
+    <Compile Include="Areas\Admin\Services\ApplicationSettingsService.cs" />
+    <Compile Include="Areas\Admin\Services\ArticleService.cs" />
+    <Compile Include="Areas\Admin\Services\ContentService.cs" />
+    <Compile Include="Areas\Admin\Services\FeeService.cs" />
+    <Compile Include="Areas\Admin\Services\MailService.cs" />
+    <Compile Include="Areas\Admin\Services\UserService.cs" />
+    <Compile Include="Areas\Admin\ViewModels\AfflilateBonusVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ApplicationSettingsVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ArticleContentVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ContactVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\GalleryVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\InvoiceVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\MatrimonyVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\OrganisationVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\AnnouncementVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\PrayerVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\SacramentVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\ArticleVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\CategoriesVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\HomeModel.cs" />
+    <Compile Include="Areas\Admin\ViewModels\RolePermissionVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\RoleVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\SpiritualistVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\MemberVM.cs" />
+    <Compile Include="Areas\Admin\ViewModels\UserVM.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ApplicationController.cs" />
+    <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\OrganisationController.cs" />
+    <Compile Include="Controllers\PrayerController.cs" />
+    <Compile Include="Controllers\SacramentController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Areas\Admin\Views\ApplicationSettings\Manage.cshtml" />
+    <Content Include="Areas\Admin\Views\ApplicationSettings\ManageCategories.cshtml" />
+    <Content Include="Areas\Admin\Views\ApplicationSettings\_CreateCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\ApplicationSettings\_CreateSubCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\ApplicationSettings\_EditCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\ApplicationSettings\_EditSubCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\Article\CreateArticleContent.cshtml" />
+    <Content Include="Areas\Admin\Views\Article\EditArticleContent.cshtml" />
+    <Content Include="Areas\Admin\Views\Article\ManageArticleContents.cshtml" />
+    <Content Include="Areas\Admin\Views\Article\ManageArticles.cshtml" />
+    <Content Include="Areas\Admin\Views\Article\_CreateArticle.cshtml" />
+    <Content Include="Areas\Admin\Views\Article\_EditArticle.cshtml" />
+    <Content Include="Areas\Admin\Views\Dashboard\Analytics.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Home.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Manage.cshtml" />
+    <Content Include="Areas\Admin\Views\User\ManageAfflilates.cshtml" />
+    <Content Include="Areas\Admin\Views\User\ManagePermissions.cshtml" />
+    <Content Include="Areas\Admin\Views\User\ManageRoles.cshtml" />
+    <Content Include="Areas\Admin\Views\User\_ArticleBonusSummary.cshtml" />
+    <Content Include="Areas\Admin\Views\User\_AuthorBonusSummary.cshtml" />
+    <Content Include="Areas\Admin\Views\User\_BookBonusSummary.cshtml" />
+    <Content Include="Areas\Admin\Views\User\_CreateRole.cshtml" />
+    <Content Include="Areas\Admin\Views\User\_CreateUser.cshtml" />
+    <Content Include="Areas\Admin\Views\User\_EditRole.cshtml" />
+    <Content Include="Areas\Admin\Views\User\_EditUser.cshtml" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Contents\fonts\fa-solid-900.eot" />
+    <Content Include="Contents\fonts\fa-solid-900.ttf" />
+    <Content Include="Contents\fonts\fa-solid-900.woff" />
+    <Content Include="Contents\fonts\fa-solid-900.woff2" />
+    <Content Include="Contents\fonts\fa-solid-900d41d.eot" />
+    <Content Include="Contents\fonts\ionicons.eot" />
+    <Content Include="Contents\fonts\ionicons.ttf" />
+    <Content Include="Contents\fonts\ionicons.woff" />
+    <Content Include="Contents\fonts\Linearicons-Free.eot" />
+    <Content Include="Contents\fonts\Linearicons-Free.ttf" />
+    <Content Include="Contents\fonts\Linearicons-Free.woff" />
+    <Content Include="Contents\fonts\Linearicons-Free.woff2" />
+    <Content Include="Contents\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="Contents\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="Contents\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Front_Content\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Front_Content\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Front_Content\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Front_Content\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Front_Content\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Front_Content\vendor\boxicons\fonts\boxicons.eot" />
+    <Content Include="Front_Content\vendor\boxicons\fonts\boxicons.ttf" />
+    <Content Include="Front_Content\vendor\boxicons\fonts\boxicons.woff" />
+    <Content Include="Front_Content\vendor\boxicons\fonts\boxicons.woff2" />
+    <Content Include="Front_Content\vendor\icofont\fonts\icofont.woff" />
+    <Content Include="Front_Content\vendor\icofont\fonts\icofont.woff2" />
+    <Content Include="Front_Content\vendor\jquery\jquery.min.map" />
+    <Content Include="Front_Content\vendor\owl.carousel\LICENSE" />
+    <Content Include="Front_Content\vendor\owl.carousel\README.md" />
+    <Content Include="Areas\Admin\Views\Spiritualist\Manage.cshtml" />
+    <Content Include="Areas\Admin\Views\Spiritualist\_EditSpiritualist.cshtml" />
+    <Content Include="Areas\Admin\Views\Spiritualist\_CreateSpiritualist.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\AddOrganisation.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\AddPrayer.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\AddSacrament.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\CreateArticleContent.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\EditArticleContent.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\EditOrganisation.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\EditPrayer.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\EditSacrament.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\ManageArticleContents.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\ManageArticles.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\ManageOrganisations.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\ManagePrayers.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\ManageSacraments.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\OrganisationDetail.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\PrayerDetail.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\SacramentDetail.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\_CreateArticle.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\_EditArticle.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\ManageGalleries.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\AddGallery.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\EditGallery.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\ManageAnnouncement.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\AnnouncementDetail.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\EditAnnouncement.cshtml" />
+    <Content Include="Areas\Admin\Views\Content\AddAnnouncement.cshtml" />
+    <Content Include="Areas\Admin\Views\Fee\Manage.cshtml" />
+    <Content Include="Areas\Admin\Views\Fee\_CreateFee.cshtml" />
+    <Content Include="Areas\Admin\Views\Fee\_EditFee.cshtml" />
+    <Content Include="Areas\Admin\Views\Mail\Mails.cshtml" />
+    <None Include="packages.config" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Shared\_FrontLayout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\About\AboutParish.cshtml" />
+    <Content Include="Views\About\ContactUs.cshtml" />
+    <Content Include="Views\About\Staff.cshtml" />
+    <Content Include="Views\About\EnuguDiocese.cshtml" />
+    <Content Include="Views\About\Direction.cshtml" />
+    <Content Include="Views\About\MassSchedule.cshtml" />
+    <Content Include="Views\About\ParishHistory.cshtml" />
+    <Content Include="Views\About\Employement.cshtml" />
+    <Content Include="Views\About\AboutPopeFrancis.cshtml" />
+    <Content Include="Views\Prayer\ViewPrayer.cshtml" />
+    <Content Include="Views\Sacrament\ViewSacrament.cshtml" />
+    <Content Include="Views\Organisation\ViewOrganisation.cshtml" />
+    <Content Include="Views\News\ViewNews.cshtml" />
+    <Content Include="Views\News\NewsArticles.cshtml" />
+    <Content Include="Views\News\Search.cshtml" />
+    <Content Include="Views\News\Category.cshtml" />
+    <Content Include="Views\News\TaggedNews.cshtml" />
+    <Content Include="Views\About\AboutBishop.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
+    <Content Include="Views\Home\Donation.cshtml" />
+    <Content Include="Views\Sacrament\Index.cshtml" />
+    <Content Include="Views\Prayer\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Shared\_SpotLight.cshtml" />
+    <Content Include="Views\Home\Calender.cshtml" />
+    <Content Include="Views\Member\Registration.cshtml" />
+    <Content Include="Views\Shared\_Notification.cshtml" />
+    <Content Include="Views\Application\BookMass.cshtml" />
+    <Content Include="Views\Application\Baptism.cshtml" />
+    <Content Include="Views\Application\Matrimony.cshtml" />
+    <Content Include="Views\Application\Eucharist.cshtml" />
+    <Content Include="Views\Application\_BookMassInvoiceGeneration.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Front_Content\img\CKP\ORGANISATION\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChurchSite.DAL\ChurchSite.DAL.csproj">
+      <Project>{6e114f07-45fc-4cb6-97bc-be88db900113}</Project>
+      <Name>ChurchSite.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonnifyPaymentGateway\MonnifyPaymentGateway.csproj">
+      <Project>{6830a354-2c5b-4992-a194-2f1c1f07354d}</Project>
+      <Name>MonnifyPaymentGateway</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5837</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5837/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

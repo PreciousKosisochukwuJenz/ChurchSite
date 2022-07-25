@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Bishop of Enugu Diocese";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>About Bishop</h2>
+            <ol>
+                <li><a href="~/Home">Home</a></li>
+                <li>About Bishop</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+
+<section id="features" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="vertical-menu">
+                    <a href="~/About/AboutParish">About CKP GRA Enugu</a>
+                    <a href="~/About/ParishHistory">Parish History</a>
+                    <a href="~/About/MassSchedule">Mass Schedule</a>
+                    <a href="~/About/Staff">Staff</a>
+                    <a href="~/About/ContactUs">Contact Us</a>
+                    <a href="~/About/EnuguDiocese">Catholic Diocese of Enugu</a>
+                    <a class="active" href="~/About/AboutBishop">About The Bishop</a>
+                    <a  href="~/About/AboutPopeFrancis">About Pope Francis</a>
+                    <a href="~/About/Direction">Direction</a>
+                    <a href="~/About/Employement">Employment</a>
+                </div>
+                @Html.Partial("_SpotLight")
+            </div>
+            <div class="col-sm-8  section-title aos-init aos-animate" data-aos="fade-up">
+               
+                <div class="row">
+                    <div class="col-sm-4"><img width="241" title="Bishop of Enugu Diocese" height="380" src="~/Front_Content/img/CKP/Bishop.png" class="vc_single_image-img attachment-full" alt="" sizes="(max-width: 641px) 100vw, 641px"></div>
+                    <div class="col-sm-8">
+                        <h2>
+                            <strong> <span>About Bishop</span></strong>
+                        </h2>
+                        <p>
+                            Callistus Chukwuma Valentine Onaga<br>
+                            <i><small>The Catholic Bishop of Enugu Diocese</small></i>
+                        </p><br />
+                        <p class="text">Born on September 29, 1958. Ordained Priest on August 8, 1987. Appointed Bishop of Enugu on February 9, 2009. Episcopal Ordination and Installation on May 2, 2009</p><br /><br />
+                        <p class="text">Onaga is a member of the Association of Episcopal Conferences of Anglophone West Africa as an ordinary and also a member of the Catholic Bishops’ Conference of Nigeria. As the diocesan bishop, Onaga is the legal holder of its microbank.</p>
+
+                    </div>
+                </div></div></div>
+    </div>
+</section>

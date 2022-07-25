@@ -1,0 +1,12 @@
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Release\ChurchSite.DAL.dll.config
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Release\ChurchSite.DAL.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Release\ChurchSite.DAL.pdb
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Release\EntityFramework.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Release\EntityFramework.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Release\ChurchSite.DAL.csprojAssemblyReference.cache
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Release\ChurchSite.DAL.csproj.CoreCompileInputs.cache
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Release\ChurchSite.DAL.csproj.CopyComplete
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Release\ChurchSite.DAL.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Release\ChurchSite.DAL.pdb

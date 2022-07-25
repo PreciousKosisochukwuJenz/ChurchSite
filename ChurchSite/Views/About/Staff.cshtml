@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Staff";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Staff</h2>
+            <ol>
+                <li><a href="~/Home/Index">Home</a></li>
+                <li>Staff</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section id="team" class="team team ">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="vertical-menu">
+                    <a href="~/About/AboutParish">About CKP GRA Enugu</a>
+                    <a href="~/About/ParishHistory">Parish History</a>
+                    <a href="~/About/MassSchedule">Mass Schedule</a>
+                    <a class="active" href="~/About/Staff">Staff</a>
+                    <a href="~/About/ContactUs">Contact Us</a>
+                    <a href="~/About/EnuguDiocese">Catholic Diocese of Enugu</a>
+                    <a href="~/About/AboutBishop">About The Bishop</a>
+                    <a href="~/About/AboutPopeFrancis">About Pope Francis</a>
+                    <a href="~/About/Direction">Direction</a>
+                    <a href="~/About/Employement">Employment</a>
+                </div>
+                @Html.Partial("_SpotLight")
+            </div>
+            <div class="col-sm-8">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Our <strong>Staff</strong></h2>
+                   @* <p>These are the profiles of the church staff. These are the people who made the church what it is today.</p>*@
+                </div>
+
+                <div class="row">
+                    @foreach (var spiritualist in ViewBag.Spiritualists)
+                    {
+                       // string PhotoBase64 = spiritualist.Photo == null ? "" : Convert.ToBase64String(spiritualist.Photo);
+                       // string PhotoSrc = string.Format("data:image/gif;base64,{0}", PhotoBase64);
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up">
+                                <div class="member-img">
+                                    <img src="@spiritualist.FilePath" class="img-fluid" alt="@spiritualist.Name" title="@spiritualist.Name">
+                                </div>
+                                <div class="member-info">
+                                    <h4>@spiritualist.Name</h4>
+                                    <span>@spiritualist.Role</span>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div></div>
+        </div>
+</section><!-- End Our Team Section -->

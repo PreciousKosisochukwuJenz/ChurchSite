@@ -1,0 +1,104 @@
+﻿@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "Donation";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Donation</h2>
+            <ol>
+                <li><a href="~/Home">Home</a></li>
+                <li>Donation</li>
+            </ol>
+        </div>
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                @Html.Partial("_SpotLight")
+            </div>
+            @*<div class="main-card mb-3 card">
+                    <div class="card-body">
+                        <h3 class="text-center mb-3">Donation</h3>
+                        <h5 class="font-weight-bold">Bank Details</h5>
+                        <p><span class="font-weight-bold">Account Name:</span> Christ the King Parish, Gra Enugu</p>
+                        <p><span class="font-weight-bold">Account Number:</span> 090987563</p>
+                        <p><span class="font-weight-bold">Bank: </span>Zenith Bank</p>
+                    </div>
+                </div>*@
+
+
+            <div class="col-sm-8 mt-5" section-title aos-init aos-animate" data-aos="fade-up">
+                <div class="main-card mb-3 card">
+                    <div class="card-body">
+                            <div class=" form-group">
+                                <label for="Name" class="col-form-label">Name</label>
+
+                                <input type="text" name="Name" class="form-control" required="True" id="Name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
+                            </div>
+                            <label for="Email" class="col-form-label">Email</label>
+
+                            <div class="form-group">
+        <input type="email" class="form-control" name="Email" required = "True" id="Email" pattern= "[a-z0-9._%+-]+@@[a-z0-9.-]+.[a-z]{2,3}$" placeholder="Your Email" @*data-rule="email"*@ data-msg="Please enter a valid email"  data-inputmask = "'alias': 'email'", im-insert = "true"/>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Amount" class="col-form-label">Amount</label>
+                            <input type="text" class="form-control input-mask-trigger" required="True" name="Amount" id="Amount" placeholder="Amount" data-rule="minlen:3" data-msg="Please enter valid amount" data-inputmask="'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': false, 'prefix': '₦', 'placeholder': '0'" ,
+                                   im-insert="true" ,style="text-align: right;" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Purpose" class="col-form-label">Purpose</label>
+                            <textarea class="form-control" name="Reason" id="Purpose" rows="5" required="True" data-rule="required" data-msg="Please write something for us" placeholder="Purpose"></textarea>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                            @*<div class="loading">Loading</div>*@
+                            @*<div class="error-message"></div>*@
+                            @*<div class="sent-message">Your message has been sent. Thank you!</div>*@
+                        </div>
+                        <div class="text-center"><button type="button" class="btn btn-dark btn-block" id="generateInvoice"> Donate</button></div>
+                    </div>
+
+                    <div class="col-sm-8 mt-3" section-title aos-init aos-animate" data-aos="fade-up" style="display:none" id="InvoiceDiv">
+                        <div class="main-card mb-3 card">
+                            <div class="card-body ">
+                                <div id="InvoiceDiv" class="col-md-12 invoice_con ">
+                                   
+                                    <p class="text-info text-center mb-3 control-label">Make transfer to the Account Number below or click on the checkout link below to pay through Monnify Interface.</p><br />
+                                        <p class="text-center"><a class="text-dark" href="#"><label for=""><strong>DESCRIPTION:  </strong></label> <span class="" id="Description"></span></a></p>
+                                        <p class="text-center"><a class="text-dark" href="#"><label for=""><strong>INVOICE  REFERENCE: </strong></label> <span class="" id="InvoiceReference"></span></a></p>
+                                        <p class="text-center"><a class="text-dark" href="#"><label for=""><strong>ACCOUNT NUMBER:  </strong></label> <span class="" id="AccountNumber"></span></a></p>
+                                        <p class="text-center"><a class="text-dark" href="#"><label for=""><strong>ACCOUNT NAME: </strong></label> <span class="" id="AccountName"></span></a></p>
+                                        <p class="text-center"><a class="text-dark" href="#"><label for=""><strong>BANK NAME: </strong></label> <span class="" id="BankName"></span></a></p>
+                                        <p class="text-center"><a class="text-dark" href="#"><label for=""><strong>BANK CODE: </strong></label> <span class="" id="BankCode"></span></a></p>
+                                        <p class="text-center"><a class="text-dark" href="#"><label for=""><strong>NAME: </strong></label> <span class="" id="StudentName"></span></a></p>
+                                        <p class="text-center"><a class="text-dark" href="#"><label for=""><strong>EMAIL: </strong></label> <span class="" id="StudentEmail"></span></a></p>
+                                        <p class="text-center"><a class="text-dark" href="#"><label for=""><strong>INVOICE EXPIRY DATE: </strong></label><span class="" id="ExpiryDate"></span></a></p>
+                                    <br />
+                                    <div class="btn btn-success btn-block" style="color: white !important" id="link">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts{
+    <script src="~/Scripts/Payment.js"></script>
+}

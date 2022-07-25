@@ -1,0 +1,485 @@
+﻿
+@{ ChurchSite.DAL.DataConnection.DatabaseEntities _entities = new ChurchSite.DAL.DataConnection.DatabaseEntities();
+    var categories = _entities.Categories.Where(x => x.IsDeleted == false && x.ParentID == null).ToList();
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+
+}
+<style>
+    .sacramentTimes.times, .massModeSacramentTimes {
+        position: relative;
+        padding: 0px;
+        list-style: none;
+        margin: 0px;
+        font-size: 16px;
+    }
+</style>
+<section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+
+
+            <!-- Slide 1 -->
+            @*  <div class="carousel-item active" style="background-image: url(/Front_Content/img/slide/slide-1.jpg);">*@
+            <div class="carousel-item active" style="background-image: url('/Front_Content/img/CKP/CHURCH VIEWS/DSC_2314.JPG');">
+                <div class="carousel-container">
+                    <div class="carousel-content animate__animated animate__fadeInUp">
+                        <h2 class="text-center">Mass Time</h2>
+                        <p class="text-center">
+                            Our masses are as follows:
+                            Sundays: 6AM, 8AM, 10AM AND 6PM<br />
+                            Weekdays:
+                            Monday - Friday:
+                            5:10AM Divine Office/Exposition
+                            6AM Morning Mass
+                            <br />
+                            Saturdays:
+                            5:30AM Divine Office
+                            6AM Morning Mass
+                        </p>
+                        <div class="text-center"><a href="~/About/MassSchedule" class="btn-get-started">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url('/Front_Content/img/CKP/CHURCH VIEWS/DSC_2315.jpg');">
+            </div>
+            <div class="carousel-item" style="background-image: url('/Front_Content/img/CKP/CHURCH VIEWS/DroneView.png');">
+            </div>
+            <div class="carousel-item" style="background-image: url('/Front_Content/img/CKP/CHURCH VIEWS/ckp front view.jpg');">
+            </div>
+            <div class="carousel-item" style="background-image: url('/Front_Content/img/CKP/CHURCH VIEWS/ckp side view.jpg');">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url('/Front_Content/img/CKP/CHURCH VIEWS/DSC_2302.jpg');">
+            </div>
+            <div class="carousel-item" style="background-image: url('/Front_Content/img/CKP/CHURCH VIEWS/DSC_2299.jpg');">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url('/Front_Content/img/CKP/CHURCH VIEWS/DSC_2243.JPG');">
+            </div>
+            <!-- Slide 3 -->
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url(/Front_Content/img/CKP/BAZAAR_BROCHURE/1a.jpg);">
+                <!--<div class="carousel-container">
+        <div class="carousel-content animate__animated animate__fadeInUp">
+            <h2 class="text-center text-uppercase">Felicitation</h2>
+            <p class="text">
+                The family of Dr. (Sir) and Lady Paschal Okolie (Okenwanamulu oha) heartily felicitates with Parish Priest, Very Rev. Fr. Ikenna Ugonwa, the Parish Vicar, the Parish Pastoral Council, the 2020 Harvest/Bazaar Committee and indeed the entire Parishioners of Christ the King Parish, GRA, Enugu on the occassionof our 2020 Harvest, thankgiving and bazaar with the theme 'Harvest of Divine Mercy'.
+            </p>
+            <p class="text">
+                We pray that the Almight God will continue to bless and strengthen us as we labour in His vineyard, Amen.
+            </p>
+            <!--<p>
+             Our masses are as follows:
+             Sundays: 6AM, 8AM, 10AM AND 6PM
+             Weekends:
+             Monday - Friday:
+             5:10AM Divine Office/Exposition
+             6AM Morning Mass
+             Saturdays:
+             5:30AM Divine Office
+             6AM Morning Mass
+         </p>
+        <div class="text-center"><a href="~/About/MassSchedule" class="btn-get-started">Read More</a></div>
+        </div>
+            </div>-->
+            </div>
+
+        </div>
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bx bx-left-arrow" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bx bx-right-arrow" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        </div>
+</section><!-- End Hero -->
+
+<section id="About" class="cta text-light" style="height:auto; background: url(/Front_Content/img/bg-1.jpg) 50% -91.2281px / cover no-repeat;">
+    <div class="container">
+        <h3 class="text-center">Welcome to Christ The King Parish GRA, Enugu</h3>
+       
+        <div class="row">
+
+            <div class="col-sm-9">
+
+                <p>
+                    Very Rev, Fr Longinus Ikenna Ugonwa<br>
+                    <i><small>The Parish Priest of Christ the King Parish GRA, Enugu</small></i>
+                </p><br />
+                <p class="text">It is my immense pleasure to welcome you to our website and Christ the King Parish GRA, Enugu.  Whether you are considering becoming Catholic, rejoining the Church after a hiatus or just looking for a new parish, we are delighted to welcome you into our friendly and loving faith community.</p>
+                <br /><br />
+                <p> We strive to live our motto to act justly, love tenderly and walk humbly with our Lord in our parish and we truly hope that you will join us.  We are a very active and lively parish and here are just a few tidbits of what you will find here at Christ the King</p>
+
+
+            </div>
+            <div class="col-sm-3 box-2_aside"><center><img class="img-fluid py-3" title="Very Rev, Fr Longinus Ikenna Ugonwa" alt="Parish Priest CKP GRA ENUGU" width="281" height="380" src="~/Front_Content/img/CKP/BAZAAR_BROCHURE/IMG-20161123-WA0004-1.jpg"></center></div>
+        </div>
+         
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2><strong>Discover Our Mission</strong></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="icon-box" data-aos="fade-up">
+                    <div class="icon"><i class="icofont-computer"></i></div>
+                    <h4 class="title"><a href="~/Member/Registration">BECOME A MEMBER OF PARISH</a></h4>
+                    <p class="description">You can learn more about us, by reading our about us page</p>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="icofont-image"></i></div>
+                    <h4 class="title"><a href="~/Application/BookMass">MASS BOOKING</a></h4>
+                    <p class="description">Request for mass booking can be done here</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
+                    <h4 class="title"><a href="~/Application/Baptism">BAPTISM</a></h4>
+                    <p class="description">This is for both new born babies and adults.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="icofont-earth"></i></div>
+                    <h4 class="title"><a href="~/Application/Matrimony">WEDDING</a></h4>
+                    <p class="description">This is the online platform for wedding application.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="icofont-settings"></i></div>
+                    <h4 class="title"><a href="~/Application/Eucharist">FIRST HOLY COMMUNION</a></h4>
+                    <p class="description">For First Holy Communion applicants.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon"><i class="icofont-tasks-alt"></i></div>
+                    <h4 class="title"><a href="~/Prayer">PRAYERS</a></h4>
+                    <p class="description">List of important prayers.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section><!-- End Services Section -->
+
+@*<div id="intro" class="basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text-container">
+                    <div class="section-title">UPCOMING EVENT</div>
+                    <h2><strong>Banza! Banza!! Banza!!! 2020</strong></h2>
+                    <p>We want to bring to your notice that our banza is upcoming...</p>
+                    <p class="testimonial-text">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>
+                    <div class="testimonial-author font-weight-bold">Louise Donovan - CEO</div>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-7">
+                <div class="image-container">
+                    <img class="img-fluid" src="~/Front_Content/img/CKP/BAZAAR BROCHURE/1.jpg" />
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div>*@
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio" @*style="background: url(/Front_Content/img/slide/slide-1.jpg) 50% -91.2281px / cover no-repeat;"*@>
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+            @* <h2><strong>Most Popular Events</strong></h2>*@
+            <h2><strong>Gallery</strong></h2>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    @foreach (var cat in categories)
+                    {
+                        <li data-filter=".filter-@cat.Id">@cat.Description</li>
+                    }
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+            @foreach (var each in ViewBag.Gallery)
+            {
+              //  string ImageSrc = "";
+                if (each.Format != "mp4")
+                {
+                    //string ImageBase64 = Convert.ToBase64String(each.ByteData);
+                    //ImageSrc = string.Format("data:image/gif;base64,{0}", ImageBase64);
+                }
+                <div class="col-lg-4 col-md-6 portfolio-item filter-@each.CategoryID">
+                    @if (each.Format != "mp4")
+                    {
+                        <img src="@each.FilePath" class="img-fluid" alt="@each.Description" title="@each.Description">
+                    }
+                    else
+                    {
+                        <video oncontextmenu="return false;" style="width: 100%; height: 250px;" controls disablePictureInPicture controlsList="nodownload noremoteplayback">
+                            <source src="@Url.Action("DownloadVideo","Content",new{id = each.Id})" autostart="false" />
+                        </video>
+                    }
+                    @if (each.Format != "mp4")
+                    {
+                        <div class="portfolio-info">
+                            <h4>@each.Description</h4>
+                            @*<p>@each.Category.Description</p>*@
+
+                            <a href="@each.FilePath" data-gall="portfolioGallery" class="venobox preview-link" title="@each.Description"><i class="bx bx-plus"></i></a>
+                        </div>
+                    }
+
+                </div>
+            }
+        </div>
+        <div class=" text-center">
+            <a class="btn text-white" style="background-color:#fd5c28;" href="~/Gallery">View More</a>
+        </div>
+    </div>
+</section><!-- End Portfolio Section -->
+
+@*<div class="slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Read Our Customer Testimonials</h2>
+                <p class="p-heading">Our clients are our partners and we can not imagine a better future for our company without helping them reach their objectives</p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Card Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container card-slider swiper-container-horizontal">
+                        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-551.667px, 0px, 0px);">
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="3">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
+                                        <div class="testimonial-author">Ronald Spice - Owner</div>
+                                    </div>
+                                </div>
+                            </div><div class="swiper-slide swiper-slide-duplicate" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="4">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
+                                        <div class="testimonial-author">Lindsay Rune - Manager</div>
+                                    </div>
+                                </div>
+                            </div><div class="swiper-slide swiper-slide-duplicate" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="5">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
+                                        <div class="testimonial-author">Ann Black - Consultant</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="0">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
+                                        <div class="testimonial-author">Jude Thorn - Founder</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide swiper-slide-prev" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="1">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
+                                        <div class="testimonial-author">Marsha Singer - Marketer</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide swiper-slide-active" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="2">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
+                                        <div class="testimonial-author">Roy Smith - Developer</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide swiper-slide-next" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="3">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
+                                        <div class="testimonial-author">Ronald Spice - Owner</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="4">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
+                                        <div class="testimonial-author">Lindsay Rune - Manager</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="5">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
+                                        <div class="testimonial-author">Ann Black - Consultant</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <div class="swiper-slide swiper-slide-duplicate" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="0">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
+                                        <div class="testimonial-author">Jude Thorn - Founder</div>
+                                    </div>
+                                </div>
+                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="1">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
+                                        <div class="testimonial-author">Marsha Singer - Marketer</div>
+                                    </div>
+                                </div>
+                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style="width: 90.3333px; margin-right: 20px;" data-swiper-slide-index="2">
+                                <div class="card">
+                                    <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
+                                        <div class="testimonial-author">Roy Smith - Developer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end of swiper-wrapper -->
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+                        <!-- end of add arrows -->
+
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of sliedr-container -->
+                <!-- end of card slider -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div>*@
+
+
+<section id="blog" class="blog">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2> <strong>Latest News and Updates</strong></h2>
+        </div>
+        <div class="row">
+            @foreach (var post in ViewBag.RecentPost)
+            {
+                //string PhotoBase64 = post.Image == null ? "" : Convert.ToBase64String(post.Image);
+                //string PhotoSrc = string.Format("data:image/gif;base64,{0}", PhotoBase64);
+                <div class="col-md-6 entries">
+                    <article class="entry" data-aos="fade-up">
+                        <div class="entry-img">
+                            <img src="@post.FilePath" alt="@post.Title" title="@post.Title" class="img-fluid">
+                        </div>
+                        <h2 class="entry-title">
+                            <a href="@Url.Action("ViewNews","News",new { id=post.Id })">@post.Title</a>
+                        </h2>
+                        <div class="entry-meta">
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="@Url.Action("ViewNews","News",new { id=post.Id })">@post.PublishedBy</a></li>
+                                <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <time datetime="@post.DateCreated">@post.DateCreated.ToLongDateString()</time></li>
+                            </ul>
+                        </div>
+
+                        <div class="entry-content">
+                            <p>
+                                @post.Description
+                            </p>
+                            <div class="read-more">
+                                <a href="@Url.Action("ViewNews","News",new { id=post.Id })">Read More</a>
+                            </div>
+                        </div>
+
+                    </article><!-- End blog entry -->
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section id="Announcement" class="cta text-light" style=" background: url(/Front_Content/img/bg-7.jpg) 50% -91.2281px / cover no-repeat;">
+    <div class="container">
+        <h3 class="text-center">Announcements</h3>
+        <marquee width="100%" behavior="scroll" direction="up" height="150px" scrollamount="1" scrolldelay="10">
+            @foreach (var item in ViewBag.Announcement)
+            {
+                //string AnnouncementPhotoBase64 = item.Image == null ? "" : Convert.ToBase64String(item.Image);
+                //string AnnouncementPhotoSrc = string.Format("data:image/gif;base64,{0}", AnnouncementPhotoBase64);
+
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-left">
+                        <h5>@item.Title</h5>
+                        <p>@item.Description</p>
+                        <br /><br />
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <img src="@item.FilePath" alt="" title="@item.Title" class="img-fluid">
+                        @*<a class="cta-btn align-middle" href="#">View More</a>*@
+                    </div>
+
+                </div>
+            }
+        </marquee>
+    </div>
+</section>

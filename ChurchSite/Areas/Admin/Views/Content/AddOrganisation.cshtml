@@ -1,0 +1,68 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.OrganisationVM
+@{
+
+    ViewBag.Title = "Add Organisation";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="app-main__inner">
+
+    @using (Html.BeginForm("AddOrganisation", "Content", FormMethod.Post, new { area = "Admin", enctype = "multipart/form-data", @class = "validate", novalidate = true }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <h5 class="card-title">Basic</h5>
+                <div class="position-relative form-group">
+                    <label for="Title" class="col-form-label">Title</label><span class="text-danger">*</span>
+                    @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", placeholder = "Title", required = true } })
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Title is required
+                    </div>
+                </div>
+                <div class="position-relative form-group">
+                    <label for="Description" class="col-form-label">Description</label><span class="text-danger">*</span>
+                    @Html.TextAreaFor(model => model.Description, 4, 0, new { @class = "form-control", placeholder = "Description", required = true })
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Description is required
+                    </div>
+                </div>
+
+                <div class="position-relative form-group">
+                    <label for="LogoInp" class="col-form-label">Image</label><span class="text-danger">*</span>
+                    <small class="form-text text-muted">Image proportion should not pass 540px x 360px</small>
+                    <img class="img-responsive img-thumbnail" id="Image" src="#" onchange="ShowPreview(this)" onerror="this.src='/Contents/images/images.png'" alt="Logo" />
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="ImageInp" name="ImageData" onchange="readImageURL(this)" />
+                        <label class="custom-file-label" for="customFile">Select file</label>
+                    </div>
+                </div>
+
+                <div class="position-relative form-group">
+                    <label for="Address" class="col-form-label">Body</label><span class="text-danger">*</span>
+                    @Html.TextAreaFor(model => model.Body, 20, 0, new { @class = "form-control", placeholder = "Enter body", required = true })
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Body is required
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="mb-4 mt-n2 btn btn-primary"><i class="fa fa-upload"></i> Save</button>
+    }
+</div>
+<script src="~/Scripts/Ajax.jquery.min.js"></script>
+<script src="~/Scripts/Previewer.js"></script>
+@section Scripts{
+    <script src="~/Scripts/Validation.js"></script>
+    <script src="~/Scripts/Tinymc.js" referrerpolicy="origin"></script>
+    <script src="~/Scripts/Editor.js"></script>
+}
+

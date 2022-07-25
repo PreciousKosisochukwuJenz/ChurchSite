@@ -1,0 +1,205 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.MatrimonyVM
+@{
+    ViewBag.Title = "Apply For Wedding";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs" style="">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Apply For Wedding</h2>
+            <ol>
+                <li><a href="~/Home">Home</a></li>
+                <li>Apply For Wedding</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                @Html.Partial("_SpotLight")
+            </div>
+            <div class="col-sm-8" section-title aos-init aos-animate" data-aos="fade-up">
+                <div class="mt-5" data-aos="fade-up">
+                    @using (Html.BeginForm("Matrimony", "Application", FormMethod.Post, new { @class = "validate", novalidate = true }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="main-card mb-3 card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Wedding Form</h5>
+                                <p class="text-danger text-center" style="font-size:12px">Kindly fill this wedding form.</p>
+                                <div class="position-relative form-group">
+                                    <label for="Name" class="col-form-label">Name</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-person"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Name", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice name!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Name required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="Residence" class="col-form-label">Residence</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-person"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Residence, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Residence", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice name!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Residence required
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="position-relative form-group">
+                                    <label for="Phone" class="col-form-label">Phone</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-email"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Phone", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Phone required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="Demonitation" class="col-form-label">Demonitation</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-android-phone-portrait"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Demonitation, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Demonitation", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Demonitation required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="BPT" class="col-form-label">BPT</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-pin"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.BPT, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter BPT", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            BPT required
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="position-relative form-group">
+                                    <label for="Communicant" class="col-form-label">Communicant</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-android-phone-portrait"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Communicant, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Communicant", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Communicant required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="Date" class="col-form-label">Date</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-android-phone-portrait"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control", autoComplete = "Off", placeholder = "DD/MM/YYYY" } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Date required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="Wedding_Place" class="col-form-label">Wedding Place</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-android-phone-portrait"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Wedding_Place, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Wedding Place", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Wedding Place required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="Sponsor" class="col-form-label">Sponsor</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-android-phone-portrait"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Sponsor, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Sponsor", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Sponsor required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center"><button class="btn btn-dark btn-block" type="submit" name="Submit"> Submit</button></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                           
+                        </div>
+
+                    </div>
+    </div>
+</section><!-- End Contact Section -->
+@section Scripts{
+    <script src="~/Scripts/Validation.js"></script>
+    <script src="~/Areas/Admin/Scripts/User.js"></script>
+}

@@ -1,0 +1,43 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.PrayerVM
+@{
+    ViewBag.Title = "Prayer";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+    ChurchSite.DAL.DataConnection.DatabaseEntities _entities = new ChurchSite.DAL.DataConnection.DatabaseEntities();
+    var prayers = _entities.Prayers.Where(x => x.IsDeleted == false).ToList();
+}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Prayer</h2>
+            <ol>
+                <li><a href="#">Prayer</a></li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+
+<section id="features" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="vertical-menu">
+                    @foreach (var pry in prayers)
+                    {
+                        <a href="@Url.Action("ViewPrayer","Prayer",new { id=pry.Id,area=""})">@pry.Title</a>
+                    }
+                </div>
+               
+            </div>
+            <div class="col-sm-8  section-title aos-init aos-animate" data-aos="fade-up">
+                <div class="moduleBody">
+                    <p>It is a crucial element of our mission to create an atmosphere for spiritual growth through our worship, whether in Mass as a community, or in one of our small Christian communities or as a prayer group. &nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

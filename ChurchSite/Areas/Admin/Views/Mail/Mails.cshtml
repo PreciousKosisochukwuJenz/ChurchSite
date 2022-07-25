@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "Mails";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@using (Html.BeginForm())
+{
+    <div class="app-main__inner">
+        <!-- Notification -->
+        <div class="alert @TempData["AlertType"] alert-dismissible fade show" style="display:none;" ="alert">
+            <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+                <span aria-hidden="true">×</span>
+            </button><i class="ion-android-done-all"></i>&nbsp;
+            @TempData["AlertMessage"]
+        </div>
+        <div class="app-page-title">
+            <div class="page-title-wrapper">
+                <div class="page-title-heading">
+                    <div class="page-title-icon">
+                        <i class="pe-7s-mail-open icon-gradient bg-deep-blue"></i>
+                    </div>
+                    <div>
+                        Mail
+                        <div class="page-title-subheading">Manage all user sent mails</div>
+                    </div>
+                </div>
+                <div class="page-title-actions">
+                    <button type="submit" data-toggle="tooltip" title="Delete mail(s)" data-placement="bottom"
+                            class="btn-shadow mr-3 btn btn-primary" value="delete" name="command">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                    <button type="submit" data-toggle="tooltip" title="Mark as read" data-placement="bottom"
+                            class="btn-shadow mr-3 btn btn-primary" value="markasread" name="command">
+                        <i class="fa fa-check-double"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h4 class="d-flex flex-wrap justify-content-between align-items-center pt-0 mb-2">
+            <div class="col-12 col-md-3 p-0 mb-3">
+                <input type="text" class="form-control" id="gsearchsimple" placeholder="Search...">
+            </div>
+        </h4>
+        <h5>Newest mails</h5><hr />
+        @{
+            if (ViewBag.UnreadMails.Count > 0)
+            {
+                foreach (var unread in ViewBag.UnreadMails)
+                {
+                    <div class="card mb-4 contsearch">
+                        <div class="card-header">
+                            <div class="media flex-wrap w-100 align-items-center">
+                                <img style="width: 40px; height: auto;" src="~/Contents/images/avatars/3.jpg"
+                                     class="d-block ui-w-40 rounded-circle" alt="">
+                                <div class="media-body ml-3">
+                                    <a href="javascript:void(0)" class="gsearch">@unread.Name (@unread.Email)</a>
+                                    <div class="text-muted small">@unread.DateRecieved.ToLongDateString() at @unread.DateRecieved.ToString("hh:mm tt")</div>
+                                </div>
+                                <div class="text-muted small ml-3">
+                                    <div>
+                                        <input name="data" value="@unread.Id" id="exampleCheck" type="checkbox" class="form-check-input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-uppercase">@unread.Subject</h6>
+                            <p>
+                                @unread.Message
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
+                            <div class="px-4 pt-3">
+                                <button type="button" class="btn btn-primary">
+                                    <i class="ion ion-md-create"></i>&nbsp; Reply
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <h6 class="text-center">No new mails</h6>
+            }
+        }
+        <h5>Older mails</h5><hr />
+        @{
+            if (ViewBag.AllMails.Count > 0)
+            {
+                foreach (var read in ViewBag.AllMails)
+                {
+                    <div class="card mb-3 contsearch">
+                        <div class="card-body">
+                            <div class="media">
+                                <img style="width: 40px; height: auto;" src="~/Contents/images/avatars/5.jpg" alt=""
+                                     class="d-block ui-w-40 rounded-circle">
+                                <div class="media-body ml-4">
+                                    <a href="javascript:void(0)" class="gsearch">@read.Name (@read.Email)</a>
+                                    <div class="text-muted small">@read.DateRecieved.ToLongDateString() at @read.DateRecieved.ToString("hh:mm tt")</div>
+                                    <div class="text-muted small ml-3 float-right">
+                                        <input name="data" value="@read.Id" id="exampleCheck" type="checkbox" class="form-check-input">
+                                    </div>
+                                    <div class="mt-2">
+                                        <h6 class=" text-uppercase">@read.Subject</h6>
+                                        <p>
+                                            @read.Message
+                                        </p>
+                                    </div>
+                                    <div class="small mt-2">
+                                        <a href="javascript:void(0)" class="text-muted">Reply</a>
+                                        <a href="javascript:void(0)" class="text-muted ml-3">
+                                            <i class="lnr-thumbs-up"></i> 15
+                                        </a>
+                                        <a href="javascript:void(0)" class="text-muted ml-3">
+                                            <i class="lnr-thumbs-down"></i> 3
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <h6 class="text-center">No old mails</h6>
+            }
+
+        }
+        <div id="localSearchSimple"></div>
+    </div>
+}
+@section Scripts{
+    <script src="~/Scripts/JsLocalSearch.js"></script>
+    <script>
+        $(function () {
+            // local search
+            $("#localSearchSimple").jsLocalSearch({
+                "searchinput": "#gsearchsimple",
+                "container": "contsearch",
+                "containersearch": "gsearch",
+                "action": "Show",
+                "html_search": true,
+                "mark_text": "si"
+            });
+        })
+    </script>
+}

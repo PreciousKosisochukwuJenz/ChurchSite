@@ -1,0 +1,356 @@
+﻿@{
+    ChurchSite.DAL.DataConnection.DatabaseEntities _entities = new ChurchSite.DAL.DataConnection.DatabaseEntities();
+    var settings = _entities.ApplicationSettings.FirstOrDefault();
+    var prayers = _entities.Prayers.Where(x => x.IsDeleted == false).ToList();
+    var sacraments = _entities.Sacraments.Where(x => x.IsDeleted == false).ToList();
+    var organisations = _entities.Organisations.Where(x => x.IsDeleted == false).ToList();
+    // string LogoBase64 = settings.Logo == null ? "" : Convert.ToBase64String(settings.Logo);
+    // var LogoSrc = string.Format("data:image/gif;base64,{0}", LogoBase64);
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Christ The King Parish GRA, Enugu - @ViewBag.Title</title>
+	<meta content="Christ the King Parish Gra, Enugu" name="descriptison">
+	<meta content="CKPGRA Enugu" name="keywords">
+
+
+	<!-- Favicons -->
+	<link href="~/Front_Content/img/CKP/logo.jpg" rel="icon">
+	<link href="~/Front_Content/img/CKP/logo.jpg" rel="apple-touch-icon">
+	<link href="~/Contents/Styles/main.d810cf0ae7f39f28f336.css" rel="stylesheet" />
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="~/Front_Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="~/Front_Content/vendor/icofont/icofont.min.css" rel="stylesheet">
+	<link href="~/Front_Content/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="~/Front_Content/vendor/animate.css/animate.min.css" rel="stylesheet">
+	<link href="~/Front_Content/vendor/venobox/venobox.css" rel="stylesheet">
+	<link href="~/Front_Content/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+	<link href="~/Front_Content/vendor/aos/aos.css" rel="stylesheet">
+	<link href="~/Front_Content/css/toastr.css" rel="stylesheet" />
+	<!-- Template Main CSS File -->
+	<link href="~/Front_Content/css/orange-style.css" rel="stylesheet">
+
+
+</head>
+
+<body data-spy="affix" data-target=".navbar" data-offset="50">
+	@Html.Partial("_Notification")
+	<!-- ======= Top Bar ======= -->
+	@*<section id="topbar" class="d-none d-lg-block">
+			<div class="container d-flex">
+				<div class="contact-info mr-auto">
+					<i class="icofont-envelope"></i><a href="mailto:@settings.Email">@settings.Email</a>
+					<i class="icofont-phone"></i> @settings.PhoneNumber
+				</div>
+
+				<div class="bg-danger py-2 font-weight-bold pull-right" style="margin-top: -10px;margin-bottom: -10px;">
+					<a class="text-white text-center text-capitalize px-3" href="@Url.Action("Donation","Home")">DONATION</a>
+				</div>
+				<div class="social-links">
+
+					<a href="@settings.TwitterHandle" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
+					<a href="@settings.FacebookHandle" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
+					<a href="@settings.InstagramHandle" target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
+				</div>
+			</div>
+		</section>*@
+
+	<!-- ======= Header ======= -->
+	<header id="header">
+		@* <div class="container d-flex">*@
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="logo  mr-auto">
+						@*<h1 class="text-light"><a href="~/">@settings.AppName</a></h1>*@
+						<!-- Uncomment below if you prefer to use an image logo -->
+						<a href="~/"><img src="~/Front_Content/img/CKP/CKO LOGO MAIN 2.png" title="CKP GRA ENUGU LOGO" class="img-fluid"></a>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="liteholder">
+							<ul>
+								<li><a href="~/Home/Calender">Parish Calendar</a></li>
+								<li><a href="~/Home/Index#blog">News</a></li>
+								<li><a href="~/Home/Index#Announcement">Announcement</a></li>
+								<li><a href="@Url.Action("Index","Gallery")">Photo Gallery</a></li>
+								<li><a href="~/About/ContactUs">Contact Us</a></li>
+								<li class="bg-danger pb-1 "><a class="text-white font-weight-bold" href="@Url.Action("Donation","Home")">Donation</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row head-MassSchedule">
+						<div class="col-sm-4"></div>
+						<div class="col-sm-8">
+							<div class="mt-3 pull-right">
+								<img height="20px" style="background-color: transparent" src="~/Front_Content/img/CKP/Images/church.png" />
+								<a class="text-dark font-weight-bold mt-1" style="font-size : 12px; margin-left : -8px" href="~/About/MassSchedule">
+									Sunday Masses: 06:00am, 08:00am, 10:00am and 06:00pm
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<nav class="nav-menu d-none d-lg-block">
+							<ul>
+								@*<li class="">
+										<a href="./">Home</a>
+									</li>*@
+								<li class="drop-down">
+									<a href="~/Home/Index#About">ABOUT US</a>
+									<ul>
+										<li><a href="~/About/AboutParish">About CKP GRA Enugu</a></li>
+										<li><a href="~/About/ParishHistory">Parish History</a></li>
+										<li><a href="~/About/MassSchedule">Mass Schedule</a></li>
+										<li><a href="~/About/Staff">Staff</a></li>
+										<li><a href="~/About/ContactUs">Contact Us</a></li>
+										<li><a href="~/About/EnuguDiocese">Catholic Diocese of Enugu</a></li>
+										<li><a href="~/About/AboutBishop">About The Bishop</a></li>
+										<li><a href="~/About/AboutPopeFrancis">About Pope Francis</a></li>
+										<li><a href="~/About/Direction">Direction</a></li>
+									</ul>
+								</li>
+								<li class="drop-down">
+									<a href="~/Prayer">Prayer</a>
+									<ul>
+										@foreach (var pry in prayers)
+										{
+											<li><a href="@Url.Action("ViewPrayer","Prayer",new { id=pry.Id,area=""})">@pry.Title</a></li>
+										}
+									</ul>
+								</li>
+
+								<li class="drop-down">
+									<a href="~/Sacrament">SACRAMENT</a>
+									<ul>
+										@foreach (var item in sacraments)
+										{
+											<li><a href="@Url.Action("ViewSacrament","Sacrament",new { id=item.Id,area=""})">@item.Title</a></li>
+										}
+									</ul>
+								</li>
+								<li class="drop-down">
+									<a href="">ORGANISATION</a>
+									<ul>
+										@foreach (var item in organisations)
+										{
+											<li><a href="@Url.Action("ViewOrganisation","Organisation",new { id=item.Id,area=""})">@item.Title</a></li>
+										}
+									</ul>
+								</li>
+								<li class="drop-down">
+									<a href="">Services</a>
+									<ul>
+										<li><a href="~/Member/Registration">Become a Member of The Parish</a></li>
+										@*<li><a href="#">Bulletin</a></li>*@
+										<li> <a href="~/Application/Eucharist">Recieve First Holy Communion</a></li>
+										<li><a href="~/Application/Baptism">Apply for Baptism</a></li>
+										<li><a href="~/Application/BookMass">Mass Booking</a></li>
+										<li><a href="~/Application/Matrimony">Apply for Wedding</a></li>
+										@* <li><a href="~/Account/Login">STAFF LOGIN</a></li>*@
+									</ul>
+								</li>
+								<li class="drop-down">
+									<a href="">MEDIA</a>
+									<ul>
+										<li><a href="~/Home/Index#blog">Latest News and Updates</a></li>
+										<li><a href="~/Home/Index#portfolio">Events</a></li>
+										<li><a target="_blank" href="https://www.youtube.com/channel/UCRluD1Pr_kMYBksHy2bvlCw">CKP GRA on Youtube</a></li>
+									</ul>
+								</li>
+
+
+
+							</ul>
+						</nav><!-- .nav-menu -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</header><!-- End Header -->
+	<!-- ======= Hero Section ======= -->
+
+
+	<main id="main">
+		@RenderBody()
+		<hr />
+		<section id="qlinks" class="  qlink-bar ">
+			<div class="container">
+				<h4 class="col-primary">Quick Links</h4>
+				<div class="row">
+					<div class="col-sm-4 col-md-3">
+
+						<div class="image center-block">
+							<a href="http://www.vatican.va/phome_en.htm" target="_blank"><img src="~/Front_Content/img/CKP/QUICK_LICK/holy-see.jpg" alt="Holy See" title="The Holy See" width="219" height="80"></a>
+						</div>
+
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="image center-block">
+							<a href="https://web.facebook.com/thechoiceflame/?_rdc=1&_rdr" target="_blank"><img src="~/Front_Content/img/CKP/QUICK_LICK/choice-flame.jpg" alt="Choice Flame Enugu" title="Choice Flame" width="219" height="80" style="border: 1px solid gray;box-shadow: 2px 2px 2px #111; border-radius: 2% "></a>
+						</div>
+
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="image center-block">
+							<a href="http://www.wau.org/" target="_blank"><img src="~/Front_Content/img/CKP/QUICK_LICK/wauorg.png" alt="Word Among Us | Daily Meditation" title="The Word Among Us | Daily Meditation" width="219" height="80"></a>
+						</div>
+
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="image center-block">
+							<a href="https://www.catholicagora.org/" target="_blank"><img src="~/Front_Content/img/CKP/QUICK_LICK/agora.jpg" alt="The Catholic Agora" title="The Catholic Agora" width="219" height="80"></a>
+						</div>
+
+					</div>
+				</div>
+				<div class="row my-3">
+
+					<div class="col-sm-4 col-md-3">
+						<div class="image center-block">
+							<a href="https://www.catholicdioceseenugu.org.ng/" target="_blank"><img src="~/Front_Content/img/CKP/QUICK_LICK/enugu-diocese.png" alt="Catholic Diocese Of Enugu" title="Catholic Diocese Of Enugu" width="219" height="80" style="border: 1px solid gray;box-shadow: 2px 2px 2px #111; border-radius: 2% "></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="image center-block">
+							<a href="http://www.catholicsun.org/" target="_blank"><img src="~/Front_Content/img/CKP/QUICK_LICK/catholic-sun.jpg" alt="The Catholic Sun" title="The Catholic Sun" width="219" height="80"></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="image center-block">
+							<a href="http://www.ewtn.com/" target="_blank"><img src="~/Front_Content/img/CKP/QUICK_LICK/ewtn.jpg" alt="Global Catholic Network" title="Global Catholic Network" width="219" height="80"></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="image center-block">
+							<a href="http://www.ewtn.com/ewtnkids/" target="_blank"><img src="~/Front_Content/img/CKP/QUICK_LICK/ewtnkids.jpg" alt="Global Catholic Network | EWTNKids" title="Global Catholic Network | EWTNKids" width="219" height="80"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+	</main><!-- End #main -->
+	<!-- ======= Footer ======= -->
+	<footer id="footer">
+
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-3 col-md-6 footer-contact">
+						<h3>@settings.AppName</h3>
+						<p style="text-align: left">
+							@settings.Address<br /><br />
+							<strong>Phone:</strong> @settings.PhoneNumber<br>
+							<strong>Email:</strong> @settings.Email<br>
+						</p><br />
+						<div class="font-weight-bold py-2">
+							<a class="bg-danger py-2  text-white text-center text-capitalize px-3" href="@Url.Action("Donation","Home")">DONATION</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-6 footer-links">
+						<h4>Useful Links</h4>
+						<ul>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/">Home</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/About/AboutParish">About us</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/Home/Index#blog">News</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/Home/Index#Announcement">Announcement</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/Home/Calender">Parish Calendar</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-links">
+						<h4>Our Services</h4>
+						<ul>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/Member/Registration">Become a Member of the Parish</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/Application/Eucharist">Recieve First Holy Communion</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/Application/Baptism">Apply for Baptism</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/Application/BookMass">Mass Booking</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="~/Application/Matrimony">Apply for Wedding</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4 col-md-6 footer-newsletter">
+
+						<h4>Stay Connected to @settings.AppName</h4>
+						<p>Enter your email here...</p>
+						<form action="" method="post">
+							<input type="email" name="email"><input type="submit" value="Subscribe">
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container d-md-flex py-4">
+
+			<div class="mr-md-auto text-center text-md-left">
+				<div class="copyright">
+					&copy; Copyright <strong><span>@settings.AppName</span></strong>. All Rights Reserved
+				</div>
+			</div>
+			<div class="social-links text-center text-md-right pt-3 pt-md-0">
+				<a href="@settings.TwitterHandle" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+				<a href="@settings.FacebookHandle" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+				<a href="@settings.InstagramHandle" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+			</div>
+		</div>
+	</footer><!-- End Footer -->
+
+	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="~/Front_Content/vendor/jquery/jquery.min.js"></script>
+	<script src="~/Front_Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="~/Front_Content/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script src="~/Scripts/main.d810cf0ae7f39f28f336.js"></script>
+	<script src="~/Front_Content/vendor/php-email-form/validate.js"></script>
+	<script src="~/Front_Content/vendor/jquery-sticky/jquery.sticky.js"></script>
+	<script src="~/Front_Content/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="~/Front_Content/vendor/venobox/venobox.min.js"></script>
+	<script src="~/Front_Content/vendor/waypoints/jquery.waypoints.min.js"></script>
+	<script src="~/Front_Content/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script src="~/Front_Content/vendor/aos/aos.js"></script>
+	<script src="~/Front_Content/js/toastr.js"></script>
+	<script src="~/Scripts/Validation.js"></script>
+	<!-- Template Main JS File -->
+	<script src="~/Front_Content/js/main.js"></script>
+	@RenderSection("Scripts", false)
+	@if (ViewBag.ErrorMessage != null)
+	{
+		<script>
+			$(document).ready(function () {
+				var message = $("#ErrorMessage").text().trim();
+				toastr.error(message, 'Error!', { timeOut: 5000 });
+			});
+		</script>
+	}
+	@if (ViewBag.SuccessMessage != null)
+	{
+		<script>
+			$(document).ready(function () {
+				var message = $("#SuccessMessage").text().trim();
+				toastr.success(message, 'Success!', { timeOut: 5000 });
+			});
+		</script>
+	}
+
+</body>
+
+</html>

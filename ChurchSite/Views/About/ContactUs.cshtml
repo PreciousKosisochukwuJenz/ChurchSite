@@ -1,0 +1,107 @@
+﻿@{
+    ChurchSite.DAL.DataConnection.DatabaseEntities _entities = new ChurchSite.DAL.DataConnection.DatabaseEntities();
+    var settings = _entities.ApplicationSettings.FirstOrDefault();
+}
+@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs" style="">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Contact Us</h2>
+            <ol>
+                <li><a href="~/Home">Home</a></li>
+                <li>Contact Us</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="vertical-menu">
+                    <a href="~/About/AboutParish">About CKP GRA Enugu</a>
+                    <a href="~/About/ParishHistory">Parish History</a>
+                    <a href="~/About/MassSchedule">Mass Schedule</a>
+                    <a href="~/About/Staff">Staff</a>
+                    <a class="active" href="~/About/ContactUs">Contact Us</a>
+                    <a href="~/About/EnuguDiocese">Catholic Diocese of Enugu</a>
+                    <a href="~/About/AboutBishop">About The Bishop</a>
+                    <a href="~/About/AboutPopeFrancis">About Pope Francis</a>
+                    <a href="~/About/Direction">Direction</a>
+                    <a href="~/About/Employement">Employment</a>
+                </div>
+                @Html.Partial("_SpotLight")
+            </div>
+            <div class="col-sm-8">
+            <div class="justify-content-center" data-aos="fade-up">
+
+                    <div class="info-wrap">
+                        <div class="row">
+                            <div class="col-lg-4 info">
+                                <i class="icofont-google-map"></i>
+                                <h4>Location:</h4>
+                                <p>@settings.Address</p>
+                            </div>
+
+                            <div class="col-lg-4 info mt-4 mt-lg-0">
+                                <i class="icofont-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>@settings.Email</p>
+                            </div>
+
+                            <div class="col-lg-4 info mt-4 mt-lg-0">
+                                <i class="icofont-phone"></i>
+                                <h4>Call:</h4>
+                                <p>@settings.PhoneNumber</p>
+                            </div>
+                        </div>
+                        <center>
+                            <br> <br> <br> The Parish Office hours are Monday - Friday from 9:00 am - 4:00 pm
+                        </center>
+                    </div>
+            </div>
+
+
+            <div class="row mt-5 justify-content-center" data-aos="fade-up">
+                @using (Html.BeginForm("ContactUs", "About", FormMethod.Post, new {  @class = "php-email-form validate", novalidate = true }))
+                {
+                    @Html.AntiForgeryToken()
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="Subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="Message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="loading">Loading</div>
+                          @*<div class="error-message"></div>*@
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><input type="submit" name="Submit" value="Send Message" /></div>
+                }
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section><!-- End Contact Section -->

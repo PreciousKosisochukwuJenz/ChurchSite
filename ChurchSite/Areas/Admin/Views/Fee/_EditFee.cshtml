@@ -1,0 +1,65 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.FeeVM
+<div class="modal fade" id="Edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Fee</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            @using (Html.BeginForm("EditFee", "Fee", FormMethod.Post, new { area = "Admin", @class = "validate", novalidate = true }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.Id)
+                <div class="modal-body">
+                    <div class="position-relative form-group">
+                        <label for="Description" class="col-form-label">Description</label><span class="text-danger">*</span>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="ion-person"></i>
+                                </div>
+                            </div>
+                            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Description", required = true } })
+                            <div class="valid-feedback">
+                                Nice!
+                            </div>
+                            <div class="invalid-feedback">
+                                Description required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative form-group">
+                        <label for="Amount" class="col-form-label">Amount</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="fa fa-money-bill-alt"></i>
+                                </div>
+                            </div>
+                            @Html.EditorFor(model => model.AmountString, new { htmlAttributes = new { @class = "form-control input-mask-trigger",
+                           data_inputmask = "'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': false, 'prefix': '₦', 'placeholder': '0'",
+                                            im_insert = "true" ,style = "text-align: right;"
+                       } })
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="ladda-button btn btn-shadow btn-primary" data-style="zoom-in">
+                        <span class="ladda-label">Update</span>
+                        <span class="ladda-spinner"></span>
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+
+

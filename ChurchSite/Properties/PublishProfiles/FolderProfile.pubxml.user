@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/Admin/Scripts/Afflilate.js">
+      <publishTime>10/30/2020 14:01:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Scripts/Article.js">
+      <publishTime>12/01/2021 13:40:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Scripts/ArticleContent.js">
+      <publishTime>06/08/2020 23:22:38</publishTime>
+    </File>
+    <File Include="Areas/Admin/Scripts/Author.js">
+      <publishTime>10/28/2020 10:30:06</publishTime>
+    </File>
+    <File Include="Areas/Admin/Scripts/Book.js">
+      <publishTime>10/27/2020 21:27:44</publishTime>
+    </File>
+    <File Include="Areas/Admin/Scripts/Categoy.js">
+      <publishTime>06/08/2020 02:16:00</publishTime>
+    </File>
+    <File Include="Areas/Admin/Scripts/Content.js">
+      <publishTime>02/04/2021 17:20:17</publishTime>
+    </File>
+    <File Include="Areas/Admin/Scripts/Role.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Areas/Admin/Scripts/Spiritualist.js">
+      <publishTime>12/01/2021 02:27:36</publishTime>
+    </File>
+    <File Include="Areas/Admin/Scripts/User.js">
+      <publishTime>07/30/2020 02:51:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/ApplicationSettings/Manage.cshtml">
+      <publishTime>11/01/2021 23:29:00</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/ApplicationSettings/ManageCategories.cshtml">
+      <publishTime>12/29/2020 14:19:58</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/ApplicationSettings/_CreateCategory.cshtml">
+      <publishTime>11/01/2021 21:02:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/ApplicationSettings/_CreateSubCategory.cshtml">
+      <publishTime>11/01/2021 21:02:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/ApplicationSettings/_EditCategory.cshtml">
+      <publishTime>11/01/2021 21:02:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/ApplicationSettings/_EditSubCategory.cshtml">
+      <publishTime>11/01/2021 21:02:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Article/CreateArticleContent.cshtml">
+      <publishTime>02/09/2021 21:06:55</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Article/EditArticleContent.cshtml">
+      <publishTime>02/09/2021 21:06:55</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Article/ManageArticleContents.cshtml">
+      <publishTime>02/09/2021 21:06:55</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Article/ManageArticles.cshtml">
+      <publishTime>02/09/2021 21:06:55</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Article/_CreateArticle.cshtml">
+      <publishTime>12/01/2021 13:09:48</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Article/_EditArticle.cshtml">
+      <publishTime>12/01/2021 13:11:18</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/AddAnnouncement.cshtml">
+      <publishTime>02/05/2021 12:31:43</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/AddGallery.cshtml">
+      <publishTime>01/27/2021 02:33:17</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/AddOrganisation.cshtml">
+      <publishTime>01/02/2021 00:19:14</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/AddPrayer.cshtml">
+      <publishTime>01/02/2021 00:21:25</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/AddSacrament.cshtml">
+      <publishTime>01/02/2021 00:19:14</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/AnnouncementDetail.cshtml">
+      <publishTime>02/09/2021 19:35:28</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/CreateArticleContent.cshtml">
+      <publishTime>02/09/2021 19:34:23</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/EditAnnouncement.cshtml">
+      <publishTime>02/09/2021 19:19:52</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/EditArticleContent.cshtml">
+      <publishTime>02/09/2021 19:27:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/EditGallery.cshtml">
+      <publishTime>01/27/2021 06:16:16</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/EditOrganisation.cshtml">
+      <publishTime>02/09/2021 19:27:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/EditPrayer.cshtml">
+      <publishTime>02/09/2021 19:27:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/EditSacrament.cshtml">
+      <publishTime>02/09/2021 19:27:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/ManageAnnouncement.cshtml">
+      <publishTime>02/09/2021 19:27:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/ManageArticleContents.cshtml">
+      <publishTime>02/09/2021 19:27:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/ManageArticles.cshtml">
+      <publishTime>02/09/2021 19:27:46</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/ManageGalleries.cshtml">
+      <publishTime>02/10/2021 16:22:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/ManageOrganisations.cshtml">
+      <publishTime>02/09/2021 19:35:28</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/ManagePrayers.cshtml">
+      <publishTime>02/09/2021 19:35:28</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/ManageSacraments.cshtml">
+      <publishTime>02/09/2021 19:35:28</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/OrganisationDetail.cshtml">
+      <publishTime>02/09/2021 19:35:28</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/PrayerAnnouncement.cshtml">
+      <publishTime>02/04/2021 17:26:15</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/PrayerDetail.cshtml">
+      <publishTime>02/09/2021 19:35:28</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/SacramentDetail.cshtml">
+      <publishTime>02/09/2021 19:35:28</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/_CreateArticle.cshtml">
+      <publishTime>01/15/2021 13:39:22</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Content/_EditArticle.cshtml">
+      <publishTime>01/15/2021 13:39:14</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Dashboard/Analytics.cshtml">
+      <publishTime>01/02/2021 17:47:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Fee/Manage.cshtml">
+      <publishTime>02/10/2021 16:08:39</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Fee/_CreateFee.cshtml">
+      <publishTime>02/10/2021 16:08:39</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Fee/_EditFee.cshtml">
+      <publishTime>02/10/2021 16:08:39</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Home/Home.cshtml">
+      <publishTime>01/02/2021 17:37:58</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Mail/Mails.cshtml">
+      <publishTime>02/11/2021 10:30:30</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminLayout.cshtml">
+      <publishTime>02/12/2021 16:11:52</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Spiritualist/Manage.cshtml">
+      <publishTime>02/10/2021 16:23:11</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Spiritualist/_CreateSpiritualist.cshtml">
+      <publishTime>12/01/2021 11:16:58</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Spiritualist/_EditSpiritualist.cshtml">
+      <publishTime>12/01/2021 11:16:38</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/Manage.cshtml">
+      <publishTime>06/08/2020 02:13:10</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/ManageAfflilates.cshtml">
+      <publishTime>01/31/2021 22:26:15</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/ManagePermissions.cshtml">
+      <publishTime>11/01/2021 21:42:14</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/ManageRoles.cshtml">
+      <publishTime>10/28/2020 10:20:26</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/_ArticleBonusSummary.cshtml">
+      <publishTime>10/30/2020 13:51:30</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/_AuthorBonusSummary.cshtml">
+      <publishTime>10/30/2020 13:51:36</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/_BookBonusSummary.cshtml">
+      <publishTime>10/30/2020 13:51:56</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/_CreateRole.cshtml">
+      <publishTime>11/01/2021 21:02:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/_CreateUser.cshtml">
+      <publishTime>11/01/2021 21:02:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/_EditRole.cshtml">
+      <publishTime>11/01/2021 21:02:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/_EditUser.cshtml">
+      <publishTime>11/01/2021 21:02:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/web.config">
+      <publishTime>07/17/2020 23:29:04</publishTime>
+    </File>
+    <File Include="bin/ChurchSite.DAL.dll">
+      <publishTime>03/04/2021 13:42:21</publishTime>
+    </File>
+    <File Include="bin/ChurchSite.DAL.dll.config">
+      <publishTime>11/01/2021 21:37:08</publishTime>
+    </File>
+    <File Include="bin/ChurchSite.DAL.pdb">
+      <publishTime>03/04/2021 13:42:21</publishTime>
+    </File>
+    <File Include="bin/ChurchSite.dll">
+      <publishTime>03/04/2021 13:42:23</publishTime>
+    </File>
+    <File Include="bin/ChurchSite.pdb">
+      <publishTime>03/04/2021 13:42:23</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/16/2020 20:38:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/16/2020 20:38:56</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>10/19/2020 06:40:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>08/09/2020 20:51:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>08/09/2020 20:51:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>08/09/2020 20:51:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>08/09/2020 20:52:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>03/25/2020 06:12:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/02/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/02/2018 12:16:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/02/2018 12:16:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>01/02/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>01/02/2018 12:20:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>01/02/2018 12:20:56</publishTime>
+    </File>
+    <File Include="Contents/fonts/AD.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AE.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AF.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AG.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AI.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AL.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AM.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AO.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AR.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AS.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AT.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AU.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AW.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AX.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/AZ.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BA.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BB.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BD.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BE.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BF.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BG.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BH.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BI.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BJ.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BL.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BM.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BN.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BO.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BR.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BS.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BT.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BV.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BW.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BY.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/BZ.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CA.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CC.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CD.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CF.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CG.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CH.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CI.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CK.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CL.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CM.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CN.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CO.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CR.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CU.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CV.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CW.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CX.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CY.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/CZ.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/DE.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/DJ.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/DK.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/DM.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/DO.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/DZ.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/EC.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/EE.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/EG.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/ER.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/ES.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/ET.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/EU.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/fa-solid-900.eot">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/fa-solid-900.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/fa-solid-900.ttf">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/fa-solid-900.woff">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/fa-solid-900.woff2">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/fa-solid-900d41d.eot">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/FI.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/FJ.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/FK.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/FM.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/FO.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/FR.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GA.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GB-ENG.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GB-NIR.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GB-SCT.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GB-WLS.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GB-ZET.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GB.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GD.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GE.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GF.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GG.svg">
+      <publishTime>07/17/2020 23:49:46</publishTime>
+    </File>
+    <File Include="Contents/fonts/GH.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GI.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GL.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GM.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GN.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GP.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GQ.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GR.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GS.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GT.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GU.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GW.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/GY.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/HK.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/HM.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/HN.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/HR.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/HT.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/HU.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/ID.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/IE.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/IL.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/IM.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/IN.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/IO.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/ionicons.eot">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/ionicons.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/ionicons.ttf">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/ionicons.woff">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/IQ.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/IR.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/IS.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/IT.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/JE.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/JM.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/JO.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/JP.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KE.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KG.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KH.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KI.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KM.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KN.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KP.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KR.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KW.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KY.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/KZ.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LA.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LB.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LC.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LGBT.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LI.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/Linearicons-Free.eot">
+      <publishTime>07/18/2020 10:57:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/Linearicons-Free.svg">
+      <publishTime>07/18/2020 10:57:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/Linearicons-Free.ttf">
+      <publishTime>07/18/2020 10:57:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/Linearicons-Free.woff">
+      <publishTime>07/18/2020 10:57:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/Linearicons-Free.woff2">
+      <publishTime>07/18/2020 10:57:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/LK.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LR.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LS.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LT.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LU.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LV.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/LY.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MA.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MC.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MD.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/ME.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MF.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MG.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MH.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MK.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/ML.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MM.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MN.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MO.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MP.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MQ.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MR.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MS.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MT.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MU.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MV.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MW.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MX.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MY.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/MZ.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NA.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NC.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NE.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NF.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NG.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NI.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NL.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NO.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NP.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NR.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NU.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/NZ.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/OM.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PA.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/Pe-icon-7-stroke.eot">
+      <publishTime>07/18/2020 00:13:04</publishTime>
+    </File>
+    <File Include="Contents/fonts/Pe-icon-7-stroke.svg">
+      <publishTime>07/18/2020 00:13:04</publishTime>
+    </File>
+    <File Include="Contents/fonts/Pe-icon-7-stroke.ttf">
+      <publishTime>07/18/2020 00:13:04</publishTime>
+    </File>
+    <File Include="Contents/fonts/Pe-icon-7-stroke.woff">
+      <publishTime>07/18/2020 00:13:04</publishTime>
+    </File>
+    <File Include="Contents/fonts/PE.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PF.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PG.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PH.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PK.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PL.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PM.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PN.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PR.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PS.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PT.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PW.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/PY.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/QA.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/RE.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/RO.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/RS.svg">
+      <publishTime>07/17/2020 23:49:48</publishTime>
+    </File>
+    <File Include="Contents/fonts/RU.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/RW.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SA.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SB.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SC.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SD.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SE.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SG.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SH.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SI.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SJ.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SK.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SL.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SM.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SN.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SO.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SR.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SS.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/ST.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SV.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SX.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SY.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/SZ.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TC.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TD.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TF.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TG.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TH.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TJ.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TK.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TL.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TM.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TN.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TO.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TR.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TT.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TV.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TW.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/TZ.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/UA.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/UG.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/UM.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/US-CA.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/US.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/UY.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/UZ.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/VA.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/VC.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/VE.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/VG.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/VI.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/VN.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/VU.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/WF.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/WS.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/XK.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/YE.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/YT.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/ZA.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/ZM.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/fonts/ZW.svg">
+      <publishTime>07/17/2020 23:49:50</publishTime>
+    </File>
+    <File Include="Contents/images/images.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Contents/Styles/basic.min.css">
+      <publishTime>01/23/2021 13:10:02</publishTime>
+    </File>
+    <File Include="Contents/Styles/dropzone.min.css">
+      <publishTime>01/23/2021 12:50:21</publishTime>
+    </File>
+    <File Include="Contents/Styles/HomeStyle.css">
+      <publishTime>12/27/2020 14:59:34</publishTime>
+    </File>
+    <File Include="Contents/Styles/main.d810cf0ae7f39f28f336.css">
+      <publishTime>11/01/2021 22:24:50</publishTime>
+    </File>
+    <File Include="Contents/Styles/sortable.css">
+      <publishTime>02/10/2021 16:11:53</publishTime>
+    </File>
+    <File Include="Front_Content/css/green-style.css">
+      <publishTime>02/02/2021 16:27:37</publishTime>
+    </File>
+    <File Include="Front_Content/css/orange-style.css">
+      <publishTime>03/04/2021 11:28:13</publishTime>
+    </File>
+    <File Include="Front_Content/css/toastr.css">
+      <publishTime>03/04/2021 12:10:16</publishTime>
+    </File>
+    <File Include="Front_Content/img/bg-1.jpg">
+      <publishTime>02/05/2021 18:18:46</publishTime>
+    </File>
+    <File Include="Front_Content/img/bg-7.jpg">
+      <publishTime>02/05/2021 18:20:29</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/ANNOUNCEMENT/1a.jpg">
+      <publishTime>02/10/2021 10:46:19</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/ARTICLE/20200702_134118.jpg">
+      <publishTime>02/10/2021 10:46:56</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/ARTICLE/Pope with delegates.jpeg">
+      <publishTime>02/09/2021 21:09:42</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/1.jpg">
+      <publishTime>05/12/2020 08:14:50</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/10.jpg">
+      <publishTime>05/12/2020 08:18:40</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/11.jpg">
+      <publishTime>05/12/2020 08:19:37</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/12.jpg">
+      <publishTime>05/12/2020 08:20:31</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/13.jpg">
+      <publishTime>05/12/2020 08:21:41</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/14.jpg">
+      <publishTime>05/12/2020 08:22:01</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/15.jpg">
+      <publishTime>05/12/2020 08:22:30</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/16.jpg">
+      <publishTime>05/12/2020 08:25:39</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/17.jpg">
+      <publishTime>05/12/2020 08:26:00</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/18.jpg">
+      <publishTime>05/12/2020 08:26:21</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/19.jpg">
+      <publishTime>05/12/2020 08:26:39</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/2.jpg">
+      <publishTime>05/12/2020 08:15:04</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/20.jpg">
+      <publishTime>05/12/2020 08:27:16</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/20180815_095243.jpg">
+      <publishTime>01/07/2020 17:30:09</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/20200702_134052.jpg">
+      <publishTime>02/07/2020 13:58:08</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/20200702_134118.jpg">
+      <publishTime>02/07/2020 13:57:39</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/21.jpg">
+      <publishTime>05/12/2020 08:27:42</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/22.jpg">
+      <publishTime>05/12/2020 08:28:03</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/23.jpg">
+      <publishTime>05/12/2020 08:28:29</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/24.jpg">
+      <publishTime>05/12/2020 08:28:54</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/25.jpg">
+      <publishTime>05/12/2020 08:29:18</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/26.jpg">
+      <publishTime>05/12/2020 08:29:41</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/27.jpg">
+      <publishTime>05/12/2020 08:30:10</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/28.jpg">
+      <publishTime>05/12/2020 08:30:31</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/29.jpg">
+      <publishTime>05/12/2020 08:30:55</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/3.jpg">
+      <publishTime>05/12/2020 08:15:18</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/30.jpg">
+      <publishTime>05/12/2020 08:31:18</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/31.jpg">
+      <publishTime>05/12/2020 08:31:34</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/32.jpg">
+      <publishTime>05/12/2020 08:32:32</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/33.jpg">
+      <publishTime>05/12/2020 08:33:16</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/34.jpg">
+      <publishTime>05/12/2020 08:34:00</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/35.jpg">
+      <publishTime>05/12/2020 08:35:54</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/4.jpg">
+      <publishTime>05/12/2020 08:15:46</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/5.jpg">
+      <publishTime>05/12/2020 08:16:01</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/6.jpg">
+      <publishTime>02/04/2021 14:06:03</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/7.jpg">
+      <publishTime>05/12/2020 08:17:36</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/8.jpg">
+      <publishTime>05/12/2020 08:18:00</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/9.jpg">
+      <publishTime>05/12/2020 08:18:16</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/HALF PAGE - KIDS FOR CHRIST.jpg">
+      <publishTime>11/22/2020 19:35:44</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/HARVEST BROCHURE CKP.jpg">
+      <publishTime>05/12/2020 08:14:04</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/HIS HOLINESS POPE FRANCIS.jpg">
+      <publishTime>11/27/2020 04:17:42</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/IMG-20161123-WA0004.jpg">
+      <publishTime>01/07/2020 22:49:13</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/IMG-20180215-WA0004.jpg">
+      <publishTime>01/07/2020 22:34:09</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/IMG-20180621-WA0004.jpg">
+      <publishTime>01/07/2020 22:22:03</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/IMG-20191021-WA0026.jpg">
+      <publishTime>10/21/2019 23:49:58</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/MR RAPHAEL OGBU MALE CATECHIST0002.png">
+      <publishTime>11/29/2020 20:48:16</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/MRS NWOBODO VIRGINIA FEMALE CATECHIST.jpg">
+      <publishTime>11/25/2020 07:35:40</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/PARISH COUNCIL 2.jpg">
+      <publishTime>01/02/2021 21:34:50</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/PARISH COUNCIL.jpg">
+      <publishTime>01/02/2021 21:21:11</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/BAZAAR_BROCHURE/Very. Rev. Fr. Longinus I. Ugonwa.jpg">
+      <publishTime>02/05/2021 19:17:19</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Bishop.png">
+      <publishTime>02/01/2021 01:33:35</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CHURCH VIEWS/ckp front view.jpg">
+      <publishTime>02/10/2021 11:02:22</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CHURCH VIEWS/ckp side view.jpg">
+      <publishTime>02/10/2021 11:02:39</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CHURCH VIEWS/DroneView.png">
+      <publishTime>02/09/2021 20:24:50</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CHURCH VIEWS/DSC_2243.JPG">
+      <publishTime>02/10/2021 11:04:01</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CHURCH VIEWS/DSC_2299.JPG">
+      <publishTime>02/10/2021 11:04:22</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CHURCH VIEWS/DSC_2302.JPG">
+      <publishTime>02/10/2021 11:04:47</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CHURCH VIEWS/DSC_2314.JPG">
+      <publishTime>02/10/2021 10:49:39</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CHURCH VIEWS/DSC_2315.JPG">
+      <publishTime>02/10/2021 11:05:11</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CKP LOGO 3.jpg">
+      <publishTime>02/09/2021 22:28:32</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CKP LOGO 4.jpg">
+      <publishTime>02/09/2021 22:29:07</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CKP LOGO 5.jpg">
+      <publishTime>02/09/2021 23:55:15</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/CKP LOGO.jpg">
+      <publishTime>02/09/2021 22:05:26</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/ckp-logo.png">
+      <publishTime>03/03/2021 17:51:50</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/ckp-logo1.png">
+      <publishTime>03/03/2021 17:55:52</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/DANOGA LOGOS.jpg">
+      <publishTime>02/09/2021 21:53:01</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/EnuguDiosease.jpg">
+      <publishTime>02/01/2021 01:47:35</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/1a.jpg">
+      <publishTime>02/09/2021 20:44:21</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/6.jpg">
+      <publishTime>02/10/2021 10:37:51</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/HALF PAGE - KIDS FOR CHRIST1.jpg">
+      <publishTime>02/10/2021 10:38:39</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/Her Execellency, Lolo Cecilia Ezeilo.jpg">
+      <publishTime>02/10/2021 10:39:04</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/His Execellncy RT. Hon. Ifeanyi Ugwuanyi.jpg">
+      <publishTime>02/10/2021 10:35:12</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/HIS HOLINESS POPE FRANCIS1.jpg">
+      <publishTime>02/10/2021 10:39:27</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/IMG-20180215-WA0004.jpg">
+      <publishTime>02/09/2021 20:46:23</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/IMG-20180621-WA0004.jpg">
+      <publishTime>02/10/2021 10:39:55</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/Most Rev. Calistus V. Onaga.jpg">
+      <publishTime>02/10/2021 10:40:11</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/Rev. Fr. Sylvanus Ugwu.jpg">
+      <publishTime>02/10/2021 10:40:33</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/Sacred Heart.jpg">
+      <publishTime>02/10/2021 10:40:52</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/Very. Rev. Fr. Ejike Mbaka.jpg">
+      <publishTime>02/10/2021 10:41:10</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/GALLERY/Very. Rev. Fr. Longinus I. Ugonwa.jpg">
+      <publishTime>02/10/2021 10:41:35</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Images/church.png">
+      <publishTime>03/03/2021 15:18:55</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Images/church1.jpg">
+      <publishTime>03/03/2021 15:12:07</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Images/sacc-logo.png">
+      <publishTime>03/03/2021 08:39:26</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Images/scroll-bar.png">
+      <publishTime>03/03/2021 07:57:40</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Images/sunday-brief.png">
+      <publishTime>03/03/2021 14:29:40</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Images/topbarbgr.jpg">
+      <publishTime>03/03/2021 08:29:58</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Images/tpn.png">
+      <publishTime>03/03/2021 13:36:21</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/logo.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/logo2.png">
+      <publishTime>01/26/2021 20:24:30</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/logo3.png">
+      <publishTime>02/02/2021 00:52:49</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Pope with delegates.jpeg">
+      <publishTime>02/02/2021 00:20:51</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/PRAYERS/Hail Mary.jpg">
+      <publishTime>02/06/2021 17:33:38</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/PRAYERS/Hail Mary1.jpg">
+      <publishTime>02/10/2021 10:43:41</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/PRAYERS/OurFather.gif">
+      <publishTime>02/09/2021 20:07:45</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/QUICK_LICK/agora.jpg">
+      <publishTime>03/03/2021 09:18:46</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/QUICK_LICK/catholic-sun.jpg">
+      <publishTime>03/03/2021 09:17:33</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/QUICK_LICK/choice-flame.jpg">
+      <publishTime>03/03/2021 09:54:54</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/QUICK_LICK/enugu-diocese.png">
+      <publishTime>03/03/2021 09:42:44</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/QUICK_LICK/ewtn.jpg">
+      <publishTime>03/03/2021 09:18:29</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/QUICK_LICK/ewtnkids.jpg">
+      <publishTime>03/03/2021 09:19:20</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/QUICK_LICK/holy-see.jpg">
+      <publishTime>03/03/2021 09:16:49</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/QUICK_LICK/wauorg.png">
+      <publishTime>03/03/2021 09:18:05</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Sacrament/Anointing of the Sick.jpg">
+      <publishTime>02/09/2021 20:41:24</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Sacrament/baptism.jpg">
+      <publishTime>02/09/2021 20:23:15</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Sacrament/Confirmation.jpg">
+      <publishTime>02/09/2021 20:40:34</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Sacrament/Marriage.jpg">
+      <publishTime>02/09/2021 20:42:00</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Sacrament/Ordination.jpg">
+      <publishTime>02/09/2021 20:41:39</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Sacrament/Reconcilliation.jpg">
+      <publishTime>02/09/2021 20:41:08</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Sacrament/Sacraments.jpg">
+      <publishTime>02/06/2021 16:34:21</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Spiritualist/IMG-20161123-WA0004.jpg">
+      <publishTime>02/10/2021 10:48:12</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Spiritualist/MR RAPHAEL OGBU MALE CATECHIST0002.png">
+      <publishTime>02/09/2021 21:28:23</publishTime>
+    </File>
+    <File Include="Front_Content/img/CKP/Spiritualist/MRS NWOBODO VIRGINIA FEMALE CATECHIST.jpg">
+      <publishTime>02/09/2021 21:27:23</publishTime>
+    </File>
+    <File Include="Front_Content/js/bank3D.js">
+      <publishTime>02/05/2021 14:22:02</publishTime>
+    </File>
+    <File Include="Front_Content/js/main.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/js/toastr.js">
+      <publishTime>03/04/2021 12:09:52</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/animate.css/animate.compat.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/animate.css/animate.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/animate.css/animate.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/aos/aos.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/aos/aos.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap-grid.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap-grid.css.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap-grid.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap-grid.min.css.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap-reboot.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap-reboot.css.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap-reboot.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap-reboot.min.css.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap.css.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/css/bootstrap.min.css.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/js/bootstrap.bundle.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/js/bootstrap.bundle.js.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/js/bootstrap.bundle.min.js.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/js/bootstrap.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/js/bootstrap.js.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/js/bootstrap.min.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/bootstrap/js/bootstrap.min.js.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/boxicons/css/animations.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/boxicons/css/boxicons.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/boxicons/css/boxicons.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/boxicons/css/transformations.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/boxicons/fonts/boxicons.eot">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/boxicons/fonts/boxicons.svg">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/boxicons/fonts/boxicons.ttf">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/boxicons/fonts/boxicons.woff">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/boxicons/fonts/boxicons.woff2">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/icofont/fonts/icofont.woff">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/icofont/fonts/icofont.woff2">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/icofont/icofont.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/isotope-layout/isotope.pkgd.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/isotope-layout/isotope.pkgd.min.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/jquery-sticky/jquery.sticky.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/jquery.easing/jquery.easing.min.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/jquery/jquery.min.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/jquery/jquery.min.map">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/assets/ajax-loader.gif">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/assets/owl.carousel.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/assets/owl.carousel.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/assets/owl.theme.default.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/assets/owl.theme.default.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/assets/owl.theme.green.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/assets/owl.theme.green.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/assets/owl.video.play.png">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/LICENSE">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/owl.carousel.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/owl.carousel.min.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/owl.carousel/README.md">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/php-email-form/changelog.txt">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/php-email-form/validate.js">
+      <publishTime>02/07/2021 18:28:13</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/venobox/venobox.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/venobox/venobox.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/venobox/venobox.min.css">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/venobox/venobox.min.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Front_Content/vendor/waypoints/jquery.waypoints.min.js">
+      <publishTime>01/11/2021 22:52:04</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/11/2021 20:29:32</publishTime>
+    </File>
+    <File Include="Scripts/Ajax.jquery.min.js">
+      <publishTime>07/19/2020 00:26:40</publishTime>
+    </File>
+    <File Include="Scripts/dropzone-amd-module.min.js">
+      <publishTime>01/23/2021 13:24:34</publishTime>
+    </File>
+    <File Include="Scripts/dropzone.min.js">
+      <publishTime>01/23/2021 12:50:21</publishTime>
+    </File>
+    <File Include="Scripts/Editor.js">
+      <publishTime>01/20/2021 00:21:28</publishTime>
+    </File>
+    <File Include="Scripts/Global.js">
+      <publishTime>12/29/2020 13:50:44</publishTime>
+    </File>
+    <File Include="Scripts/HomeUtils.js">
+      <publishTime>12/29/2020 13:47:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>07/18/2020 22:50:20</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>10/26/2020 21:34:08</publishTime>
+    </File>
+    <File Include="Scripts/JQuery-1.7.1.js">
+      <publishTime>10/27/2020 18:40:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>10/26/2020 21:41:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery.js">
+      <publishTime>02/10/2021 16:12:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery.smartWizard.min.js">
+      <publishTime>10/26/2020 20:08:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>10/26/2020 21:23:54</publishTime>
+    </File>
+    <File Include="Scripts/JsLocalSearch.js">
+      <publishTime>10/30/2020 13:56:04</publishTime>
+    </File>
+    <File Include="Scripts/main.d810cf0ae7f39f28f336.js">
+      <publishTime>10/29/2020 19:43:54</publishTime>
+    </File>
+    <File Include="Scripts/moment.js">
+      <publishTime>10/28/2020 10:25:38</publishTime>
+    </File>
+    <File Include="Scripts/Previewer.js">
+      <publishTime>01/12/2021 11:23:47</publishTime>
+    </File>
+    <File Include="Scripts/sortable.js">
+      <publishTime>02/10/2021 16:12:27</publishTime>
+    </File>
+    <File Include="Scripts/SweetAlert.js">
+      <publishTime>07/30/2020 02:40:06</publishTime>
+    </File>
+    <File Include="Scripts/Tinymc.js">
+      <publishTime>06/08/2020 21:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Validation.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/About/AboutBishop.cshtml">
+      <publishTime>03/03/2021 11:20:19</publishTime>
+    </File>
+    <File Include="Views/About/AboutParish.cshtml">
+      <publishTime>03/03/2021 11:20:32</publishTime>
+    </File>
+    <File Include="Views/About/AboutPopeFrancis.cshtml">
+      <publishTime>03/03/2021 11:20:19</publishTime>
+    </File>
+    <File Include="Views/About/ContactUs.cshtml">
+      <publishTime>03/03/2021 11:20:19</publishTime>
+    </File>
+    <File Include="Views/About/Direction.cshtml">
+      <publishTime>03/03/2021 11:20:19</publishTime>
+    </File>
+    <File Include="Views/About/Employement.cshtml">
+      <publishTime>03/03/2021 11:20:19</publishTime>
+    </File>
+    <File Include="Views/About/EnuguDiocese.cshtml">
+      <publishTime>03/03/2021 11:20:19</publishTime>
+    </File>
+    <File Include="Views/About/MassSchedule.cshtml">
+      <publishTime>03/03/2021 16:33:14</publishTime>
+    </File>
+    <File Include="Views/About/ParishHistory.cshtml">
+      <publishTime>03/03/2021 11:20:19</publishTime>
+    </File>
+    <File Include="Views/About/Staff.cshtml">
+      <publishTime>03/03/2021 16:26:57</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>02/12/2021 16:13:06</publishTime>
+    </File>
+    <File Include="Views/Gallery/Index.cshtml">
+      <publishTime>03/03/2021 10:45:48</publishTime>
+    </File>
+    <File Include="Views/Home/BookMass.cshtml">
+      <publishTime>03/04/2021 13:29:51</publishTime>
+    </File>
+    <File Include="Views/Home/Calender.cshtml">
+      <publishTime>03/03/2021 14:15:12</publishTime>
+    </File>
+    <File Include="Views/Home/Donation.cshtml">
+      <publishTime>05/02/2021 15:41:18</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>03/03/2021 14:38:05</publishTime>
+    </File>
+    <File Include="Views/Member/Registration.cshtml">
+      <publishTime>03/04/2021 13:21:08</publishTime>
+    </File>
+    <File Include="Views/News/Category.cshtml">
+      <publishTime>03/03/2021 10:52:10</publishTime>
+    </File>
+    <File Include="Views/News/NewsArticles.cshtml">
+      <publishTime>03/03/2021 10:53:13</publishTime>
+    </File>
+    <File Include="Views/News/Search.cshtml">
+      <publishTime>03/03/2021 10:52:08</publishTime>
+    </File>
+    <File Include="Views/News/TaggedNews.cshtml">
+      <publishTime>03/03/2021 10:50:56</publishTime>
+    </File>
+    <File Include="Views/News/ViewNews.cshtml">
+      <publishTime>03/03/2021 10:49:36</publishTime>
+    </File>
+    <File Include="Views/Organisation/ViewOrganisation.cshtml">
+      <publishTime>03/03/2021 10:47:38</publishTime>
+    </File>
+    <File Include="Views/Prayer/Index.cshtml">
+      <publishTime>03/03/2021 10:48:26</publishTime>
+    </File>
+    <File Include="Views/Prayer/ViewPrayer.cshtml">
+      <publishTime>03/03/2021 10:48:15</publishTime>
+    </File>
+    <File Include="Views/Sacrament/Index.cshtml">
+      <publishTime>03/03/2021 16:34:07</publishTime>
+    </File>
+    <File Include="Views/Sacrament/ViewSacrament.cshtml">
+      <publishTime>03/03/2021 10:47:34</publishTime>
+    </File>
+    <File Include="Views/Shared/_FrontLayout.cshtml">
+      <publishTime>03/04/2021 13:30:32</publishTime>
+    </File>
+    <File Include="Views/Shared/_Notification.cshtml">
+      <publishTime>03/04/2021 11:56:23</publishTime>
+    </File>
+    <File Include="Views/Shared/_SpotLight.cshtml">
+      <publishTime>03/03/2021 18:41:41</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>11/01/2021 20:29:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/09/2021 22:16:14</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

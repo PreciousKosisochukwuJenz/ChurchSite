@@ -1,0 +1,52 @@
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.csprojAssemblyReference.cache
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\bin\Debug\ChurchSite.DAL.dll.config
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\bin\Debug\ChurchSite.DAL.dll
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\bin\Debug\ChurchSite.DAL.pdb
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.csproj.CopyComplete
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.dll
+C:\Users\Precious\source\repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.pdb
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\ChurchSite.DAL.dll.config
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\ChurchSite.DAL.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\ChurchSite.DAL.pdb
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.csproj.CoreCompileInputs.cache
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.csproj.CopyComplete
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.pdb
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.AccessControl.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.Permissions.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.AccessControl.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.Permissions.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\BlueTag\Source\Repos\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.csprojAssemblyReference.cache
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\ChurchSite.DAL.dll.config
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\ChurchSite.DAL.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\ChurchSite.DAL.pdb
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.AccessControl.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.Permissions.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.AccessControl.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.Permissions.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.csprojAssemblyReference.cache
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.csproj.CoreCompileInputs.cache
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.csproj.CopyComplete
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.dll
+C:\Users\kc\Documents\WEB PROJECTS\ChurchSite\ChurchSite.DAL\obj\Debug\ChurchSite.DAL.pdb

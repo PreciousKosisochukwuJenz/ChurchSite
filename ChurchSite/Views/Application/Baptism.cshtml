@@ -1,0 +1,193 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.BaptismVM
+@{
+    ViewBag.Title = "Baptism Registration";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+    ViewData["Gender"] = new List<SelectListItem>()
+{
+    new SelectListItem { Text = "Male", Value = "Male"},
+    new SelectListItem { Text = "Female", Value = "Female"},
+};
+}
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs" style="">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Baptism Registration</h2>
+            <ol>
+                <li><a href="~/Home">Home</a></li>
+                <li>Baptism</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                @Html.Partial("_SpotLight")
+            </div>
+            <div class="col-sm-8" section-title aos-init aos-animate" data-aos="fade-up">
+                <div class="mt-5" data-aos="fade-up">
+                    @using (Html.BeginForm("Baptism", "Application", FormMethod.Post, new { @class = "validate", novalidate = true }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="main-card mb-3 card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Baptism Form</h5>
+                                <p class="text-danger text-center" style="font-size:12px">Kindly fill this baptism form.</p>
+                                <div class="position-relative form-group">
+                                    <label for="Surname" class="col-form-label">Surname</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-person"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Surname, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Surname", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice Surname!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Surname required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="ChristianName" class="col-form-label">Christian Name</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-person"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.ChristianName, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Christian Name", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice Christian Name!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Christian Name required
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="position-relative form-group">
+                                    <label for="IgboName" class="col-form-label">Igbo Name</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-email"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.IgboName, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Igbo Name", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Igbo Name required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="FatherName" class="col-form-label">Father's Name</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-android-phone-portrait"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.FatherName, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Father's Name", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Father's Name required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="MotherName" class="col-form-label">Mother's Name</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-pin"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.MotherName, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Mother's Name", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Mother's Name required
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="position-relative form-group">
+                                    <label for="Town" class="col-form-label">Town</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-android-phone-portrait"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Town, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Town", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Town required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="DateOfBaptism" class="col-form-label">Date Of Baptism</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-android-phone-portrait"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.DateOfBaptism, new { htmlAttributes = new { @class = "form-control", autoComplete = "Off", placeholder = "DD/MM/YYYY" } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Date Of Baptism required
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                                <div class="position-relative form-group">
+                                    <label for="Sponsor" class="col-form-label">Sponsor</label><span class="text-danger">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="ion-android-phone-portrait"></i>
+                                            </div>
+                                        </div>
+                                        @Html.EditorFor(model => model.Sponsor, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Sponsor", required = true } })
+                                        <div class="valid-feedback">
+                                            Nice!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Sponsor required
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center"><button class="btn btn-dark btn-block" type="submit" name="Submit"> Submit</button></div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section><!-- End Contact Section -->
+@section Scripts{
+    <script src="~/Scripts/Validation.js"></script>
+    <script src="~/Areas/Admin/Scripts/User.js"></script>
+}

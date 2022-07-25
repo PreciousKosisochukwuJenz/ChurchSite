@@ -1,0 +1,114 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.ArticleVM
+@{
+    ChurchSite.DAL.DataConnection.DatabaseEntities _entities = new ChurchSite.DAL.DataConnection.DatabaseEntities();
+    var categories = _entities.Categories.Where(x => x.IsDeleted == false && x.ParentID == null).ToList();
+    var Subcategories = _entities.Categories.Where(x => x.IsDeleted == false && x.ParentID != null).ToList();
+    var recentPost = _entities.Articles.Where(x => x.IsDeleted == false && x.Id != Model.Id).OrderByDescending(x => x.DateCreated).Take(5).ToList();
+    //string ImageBase64 = Convert.ToBase64String(Model.Image);
+    //string ImageSrc = string.Format("data:image/gif;base64,{0}", ImageBase64);
+    ViewBag.Title = "View News";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>News</h2>
+            <ol>
+                <li><a href="#">News</a></li>
+                <li>@Model.Title</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+<section id="blog" class="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 entries">
+                <article class="entry entry-single" data-aos="fade-up">
+                    <div class="entry-img">
+                        <img src="@Model.FilePath" alt="@Model.Title" title="@Model.Title" class="img-fluid">
+                    </div>
+
+                    <h2 class="entry-title">
+                        @Model.Title
+                    </h2>
+
+                    <div class="entry-meta">
+                        <ul>
+                            <li class="d-flex align-items-center"><i class="icofont-user"></i> @Model.PublishedBy</li>
+                            <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <time datetime="@Model.DateCreated">@Model.DateCreated.ToLongDateString()</time></li>
+                        </ul>
+                    </div>
+
+                    <div class="entry-content">
+                        @foreach (var cont in Model.ArticleContent)
+                        {
+                            @Html.Raw(cont.Body)
+                        }
+                      @*  @Html.Raw(Model.Description)*@
+                    </div>
+                </article><!-- End blog entry -->
+            </div><!-- End blog entries list -->
+
+            <div class="col-lg-4">
+
+                <div class="sidebar" data-aos="fade-left">
+
+                    <h3 class="sidebar-title">Search</h3>
+                    <div class="sidebar-item search-form">
+                        @using (Html.BeginForm("Search", "News", FormMethod.Post))
+                        {
+                        <input type="text" name="q">
+                        <button type="submit"><i class="icofont-search"></i></button>
+                        }
+
+                    </div><!-- End sidebar search formn-->
+
+                    <h3 class="sidebar-title">Categories</h3>
+                    <div class="sidebar-item categories">
+                        <ul>
+                            @foreach (var cat in categories)
+                            {
+                                <li><a href="@Url.Action("Category","News",new { id=cat.Id })">@cat.Description<span>(25)</span></a></li>
+                            }
+                        </ul>
+                    </div><!-- End sidebar categories-->
+
+                    <h3 class="sidebar-title">Recent Posts</h3>
+                    <div class="sidebar-item recent-posts">
+                        @foreach (var pst in recentPost)
+                        {
+                            //string PostImageBase64 = Convert.ToBase64String(pst.Image);
+                            //string PostImageSrc = string.Format("data:image/gif;base64,{0}", PostImageBase64);
+                            <div class="post-item clearfix">
+                                <img src="@pst.FilePath" alt="@pst.Title" title="@pst.Title">
+                                <h4><a href="@Url.Action("ViewNews", "News", new { id = pst.Id })">@pst.Title</a></h4>
+                                <time datetime="@pst.DateCreated">@pst.DateCreated.ToLongDateString()</time>
+                            </div>
+                        }
+
+                    </div><!-- End sidebar recent posts-->
+
+                    <h3 class="sidebar-title">Tags</h3>
+                    <div class="sidebar-item tags">
+                        <ul>
+                            @foreach (var subCat in Subcategories)
+                            {
+                                <li><a href="#">@subCat.Description</a></li>
+                            }
+                        </ul>
+
+                    </div><!-- End sidebar tags-->
+
+                </div><!-- End sidebar -->
+
+            </div><!-- End blog sidebar -->
+
+        </div>
+
+    </div>
+</section><!-- End Blog Section -->

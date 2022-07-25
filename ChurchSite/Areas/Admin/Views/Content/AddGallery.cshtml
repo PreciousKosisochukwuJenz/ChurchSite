@@ -1,0 +1,96 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.GalleryVM
+@{
+
+    ViewBag.Title = "Add Gallery content";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<link href="~/Contents/Styles/basic.min.css" rel="stylesheet" />
+<link href="~/Contents/Styles/dropzone.min.css" rel="stylesheet" />
+<div class="app-main__inner">
+
+    @using (Html.BeginForm("AddGallery", "Content", FormMethod.Post, new { area = "Admin", enctype = "multipart/form-data", @class = "validate", novalidate = true, id = "MyDropzone" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <h5 class="card-title">Basic</h5>
+                <div class="position-relative form-group">
+                    <label for="Description" class="col-form-label">Category</label><span class="text-danger">*</span>
+                    @Html.DropDownListFor(model => model.CategoryID, (IEnumerable<SelectListItem>)ViewBag.category, "-- Select category --", new { @class = "form-control", required = true })
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Category is required
+                    </div>
+                </div>
+
+                <div class="position-relative form-group">
+                    <label for="Description" class="col-form-label">Description</label><span class="text-danger">*</span>
+                    @Html.TextAreaFor(model => model.Description, 4, 0, new { @class = "form-control", placeholder = "Description", required = true })
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Description is required
+                    </div>
+                </div>
+
+                <div class="position-relative form-group">
+                    <label for="LogoInp" class="col-form-label">Image</label><span class="text-danger">*</span>
+                    <div class="position-relative form-group">
+                        <input type="file" name="data" id="data" required class="dropzone dz-clickable" style="width:100%" />
+                        <div class="dz-message">
+                            Drop files here or click to upload.
+                        </div>
+                    </div>
+                </div>
+
+                <progress id="fileProgress" style="display: none"></progress>
+            </div>
+        </div>
+        <button class="mb-4 mt-n2 btn btn-primary" id="btnUpload"><i class="fa fa-upload"></i> Save</button>
+    }
+</div>
+<script src="~/Scripts/Ajax.jquery.min.js"></script>
+<script src="~/Scripts/Previewer.js"></script>
+@section Scripts{
+    <script src="~/Scripts/Validation.js"></script>
+    <script src="~/Scripts/dropzone.min.js"></script>
+    <script src="~/Scripts/dropzone-amd-module.min.js"></script>
+    <script type="text/javascript">
+        $("body").on("click", "#btnUpload", function () {
+            var formData = new FormData();
+            formData.append("Description", $("#Description").val());
+            formData.append("CategoryID", $("#CategoryID").val());
+            formData.append("data", $("#data")[0].files[0]);
+            $.ajax({
+                url: '/Content/AddGallery',
+                type: 'POST',
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (status) {
+                    $("#fileProgress").hide();
+                },
+                xhr: function () {
+                    var fileXhr = $.ajaxSettings.xhr();
+                    if (fileXhr.upload) {
+                        $("progress").show();
+                        fileXhr.upload.addEventListener("progress", function (e) {
+                            if (e.lengthComputable) {
+                                $("#fileProgress").attr({
+                                    value: e.loaded,
+                                    max: e.total
+                                });
+                            }
+                        }, false);
+                    }
+                    return fileXhr;
+                }
+            });
+        });
+    </script>
+}
+

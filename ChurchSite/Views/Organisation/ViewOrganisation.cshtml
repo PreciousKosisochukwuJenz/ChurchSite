@@ -1,0 +1,56 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.OrganisationVM
+@{
+    ViewBag.Title = Model.Title;
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+    ChurchSite.DAL.DataConnection.DatabaseEntities _entities = new ChurchSite.DAL.DataConnection.DatabaseEntities();
+    var organisation = _entities.Organisations.Where(x => x.IsDeleted == false).ToList();
+    //string ImageBase64 = Convert.ToBase64String(Model.Image);
+    //string ImageSrc = string.Format("data:image/gif;base64,{0}", ImageBase64);
+}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Organisation</h2>
+            <ol>
+                <li><a href="#">Organisation</a></li>
+                <li>@Model.Title</li>
+            </ol>
+        </div>
+
+    </div>
+</section><!-- End Breadcrumbs -->
+
+
+<section id="features" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="vertical-menu">
+                    @foreach (var item in organisation)
+                    {
+                        if (Model.Id == item.Id)
+                        {
+                            <a class="active" href="@Url.Action("ViewOrganistion","Organisation",new { id=item.Id,area=""})">@item.Title</a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("ViewOrganistion","Organisation",new { id=item.Id,area=""})">@item.Title</a>
+                        }
+                    }
+                </div>
+                @Html.Partial("_SpotLight")
+            </div>
+            <div class="col-sm-8  section-title aos-init aos-animate" data-aos="fade-up">
+                <div class="moduleBody">
+                    <h2 class="text-center font-weight-bold">@Model.Title</h2>
+                    <img src="@Model.FilePath" alt="@Model.Title" title="@Model.Title" style="width: 100%;height:100%;" class="d-block text-center" />
+                    <h4 class="text-center my-3">@Model.Description</h4><hr /><br />
+                    @Html.Raw(Model.Body)
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

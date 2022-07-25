@@ -1,0 +1,174 @@
+﻿@model ChurchSite.Areas.Admin.ViewModels.BookMassVM
+@{
+	ViewBag.Title = "Book Mass";
+	Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+	<div class="container">
+
+		<div class="d-flex justify-content-between align-items-center">
+			<h2>Book Mass</h2>
+			<ol>
+				<li><a href="~/Home">Home</a></li>
+				<li>Book Mass</li>
+			</ol>
+		</div>
+	</div>
+</section><!-- End Breadcrumbs -->
+
+<section id="contact" class="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				@Html.Partial("_SpotLight")
+			</div>
+			<div class="col-sm-8" section-title aos-init aos-animate" data-aos="fade-up">
+				<div class="mt-5" data-aos="fade-up">
+					@using (Html.BeginForm("BookMass", "Application", FormMethod.Post, new { @class = "validate", novalidate = true }))
+					{
+						@Html.AntiForgeryToken()
+						<div class="main-card mb-3 card">
+							<div class="card-body">
+								<h5 class="card-title text-center">Mass Booking Form</h5>
+								<p class="text-danger text-center" style="font-size:12px">Kindly fill this mass booking form.</p>
+								<div class="position-relative form-group">
+									<label for="Name" class="col-form-label">Name</label><span class="text-danger">*</span>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="ion-person"></i>
+											</div>
+										</div>
+										@Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Name", required = true } })
+										<div class="valid-feedback">
+											Nice name!
+										</div>
+										<div class="invalid-feedback">
+											Name required
+										</div>
+									</div>
+								</div>
+								<div class="position-relative form-group">
+									<label for="For" class="col-form-label">For</label><span class="text-danger">*</span>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="ion-person"></i>
+											</div>
+										</div>
+										@Html.EditorFor(model => model.For, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter For", required = true } })
+										<div class="valid-feedback">
+											Nice name!
+										</div>
+										<div class="invalid-feedback">
+											For required
+										</div>
+									</div>
+								</div>
+
+								<div class="position-relative form-group">
+									<label for="Intensions" class="col-form-label">Intensions</label><span class="text-danger">*</span>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="ion-email"></i>
+											</div>
+										</div>
+										@Html.DropDownListFor(model => model.Intensions, (IEnumerable<SelectListItem>)ViewBag.Intensions, new { @class = "form-control  multiselect-dropdown", multiple = "true" })
+										<div class="valid-feedback">
+											Nice!
+										</div>
+										<div class="invalid-feedback">
+											Intensions required
+										</div>
+									</div>
+								</div>
+								<div class="position-relative form-group">
+									<label for="Other" class="col-form-label">Others</label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="ion-android-phone-portrait"></i>
+											</div>
+										</div>
+										@Html.EditorFor(model => model.Other, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Others" } })
+
+									</div>
+								</div>
+								<div class="position-relative form-group">
+									<label for="No_Of_Days" class="col-form-label">No Of Days</label><span class="text-danger">*</span>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="ion-pin"></i>
+											</div>
+										</div>
+										@Html.EditorFor(model => model.No_Of_Days, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter No Of Days", required = true } })
+										<div class="valid-feedback">
+											Nice!
+										</div>
+										<div class="invalid-feedback">
+											No Of Days required
+										</div>
+									</div>
+								</div>
+
+								<div class="position-relative form-group">
+									<label for="Amount" class="col-form-label">Amount</label><span class="text-danger">*</span>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="ion-android-phone-portrait"></i>
+											</div>
+										</div>
+										@Html.EditorFor(model => model.AmountStr, new
+								   {
+									   htmlAttributes = new
+									   {
+										   @class = "form-control input-mask-trigger",
+										   data_inputmask = "'alias': 'numeric', 'groupSeparator': ',', 'autoGroup': true, 'digits': 2, 'digitsOptional': false, 'prefix': '₦', 'placeholder': '0'",
+										   im_insert = "true",
+										   style = "text-align: right;"
+									   }
+								   })
+										<div class="valid-feedback">
+											Nice!
+										</div>
+										<div class="invalid-feedback">
+											Amount required
+										</div>
+									</div>
+								</div>
+
+								<div class="position-relative form-group">
+									<label for="Mass" class="col-form-label">Mass</label><span class="text-danger">*</span>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text">
+												<i class="ion-android-phone-portrait"></i>
+											</div>
+										</div>
+										@Html.DropDownListFor(model => model.Mass, (IEnumerable<SelectListItem>)ViewBag.Mass, new { @class = "form-control  multiselect-dropdown", multiple = "true" })
+										<div class="valid-feedback">
+											Nice!
+										</div>
+										<div class="invalid-feedback">
+											Mass required
+										</div>
+									</div>
+								</div>
+
+								<div class="text-center"><button class="btn btn-dark btn-block" type="submit" name="Submit"> Submit</button></div>
+							</div>
+						</div>
+					}
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
